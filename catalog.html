@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Каталог мороженого</title>
   </head>
   <body>
 
@@ -10,9 +10,19 @@
         <nav class="main-nav">
           <a href="index.html"></a><img src="img/logo.svg" alt="логотип Глейси"></a>
           <ul class="site-nav">
-            <li><a href="#">Каталог</a></li>
-            <li><a href="delivery.html">Доставка и оплата</a></li>
-            <li><a href="about.html">О компании</a></li>
+            <li><a href="#">Каталог</a>
+              <div class="sub-menu">
+                <span>Новинки</span>
+                <ul>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
           </ul>
           <ul class="user-nav">
               <li><a class="serch" href="search.html">поиск</a></li>
@@ -21,19 +31,20 @@
           </ul>
           <p class="working-info">
             <span>С 10 до 20, ежедневно</span>
-            <span>8 812 450-25-25</span>
+            <span><a href="tel:+788124502525">8 812 450-25-25</span>
           </p>         
         </nav>    
     </header>
     
     <main>
       <h1>Сливочное мороженое</h1>
-      <ul class="page-menu">
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li><a href="#">Сливочное</a></li>
+        <li><span>Сливочное</span></li>
       </ul>
       <section class="catalog-gallery">
+        <h2>Каталог мороженого</h2>
         <figure class="catalog-img">
          <img src="img/icecream1" alt="мороженое">
          <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
@@ -101,19 +112,16 @@
              <li><a class="social-button" href="#">Вконтакте</a></li>
            </ul>
           </div>
-          <div class="contacts">
-            <p>
-              <a href="providers/html">Для поставщиков</a><br>
-              <a href="production.html">О производстве</a>
-            </p>
-            <p>
-              <a href="documents.html">Наши документы</a><br>
-              <a href="standarts.html">Экологические стандарты</a>
-            </p>
-          </div>
+          <div class="gen-info">
+              <ul>
+                <li><a href="#">Для поставщиков</a></li>
+                <li><a href="#">О производстве</a></li>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+              </ul>
           <div class="copyright">
               <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_logo.svg" alt="Логотип HTML academy"></a>
-            <p>сделано в <a href="https://htmlacademy.ru">html acdemy</a> &copy; 2019</p>
+            <p>сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">html acdemy</a> &copy; 2019</p>
           </div>
     </footer>
     
