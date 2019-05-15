@@ -34,10 +34,11 @@
     
    <main>
      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
-    <article class="slider">
+    <div class="slider">
+
       <p class="working-info">
         <span>С 10 до 20, ежедневно</span>
-        <span><a href="tel:+788124502525">8 812 450-25-25</span>
+        <span><a href="tel:+788124502525">8 812 450-25-25</a></span>
       </p>
       <!--тут будут инпуты для переключения слайдов, когда я до них дойду-->
       <div class="slides">
@@ -48,58 +49,57 @@
       <div class="slider-button">
         <span><a href="#">Давайте оба!</a></span>
       </div>
-    </article>
+    </div>
     <div class="promo">
-     <div class="promo-block-1">
+     <div class="promo__item promo-block-1">
        <h3>Малинка даром!</h3>
        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
        <div class="promo-button"><a href="#">Хочу варенье!</a></div>
      </div>
-     <div class="promo-block-2">
+     <div class="promo__item promo-block-2">
       <h3>Шоколадки даром!</h3>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
       <div class="promo-button"><a href="#">Хочу шоколадки!</a></div>
      </div>
     </div>
-    </div>
     <section class="catalog-gallery">
       <h2>Каталог мороженого</h2>
-      <figure class="catalog-img">
-       <img src="img/icecream1" alt="мороженое">
-       <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-       <p class="price-tag">
-         <span>310p</span>
-         <span>/кг</span>
-       </p>
-       <a class="catalog-img-button" href="#">Быстрый просмотр</a>
-      </figure>
-      <figure class="catalog-img">
-        <img src="img/icecream2" alt="мороженое">
-        <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+      <div class="catalog__item">
+        <img src="img/icecream1.jpg" width="267" height="267" alt="мороженое">
+        <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         <p class="price-tag">
-          <span>380p</span>
+          <span>310p</span>
           <span>/кг</span>
-         </p>            
-        <a class="catalog-img-button" href="#">Быстрый просмотр</a>
-      </figure>
-      <figure class="catalog-img">
-        <img src="img/icecream3" alt="мороженое">
-        <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-         <p class="price-tag">
-          <span>355p</span>
-          <span>/кг</span>
-        </p>            
-        <a class="catalog-img-button" href="#">Быстрый просмотр</a>
-      </figure>
-      <figure class="catalog-img">
-        <img src="img/icecream4" alt="мороженое">
-        <figcaption>Сливочное с брусничным джемом</figcaption>
-        <p class="price-tag">
-          <span>325p</span>
-          <span>/кг</span>
-        </p>            
-        <a class="catalog-img-button" href="#">Быстрый просмотр</a>
-      </figure>
+        </p>
+        <a class="catalog__item_fast-veiw" href="#">Быстрый просмотр</a>
+       </div>
+       <div class="catalog__item">
+           <img src="img/icecream2.jpg" width="267" height="267" alt="мороженое">
+           <h3>Сливочно-кофейное с кусочками шоколада</h3>
+           <p class="price-tag">
+                <span>380p</span>
+                <span>/кг</span>
+              </p>            
+            <a class="catalog__item_fast-veiw" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="catalog__item">
+            <img src="img/icecream3.jpg" width="267" height="267" alt="мороженое">
+            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <p class="price-tag">
+                <span>355p</span>
+                <span>/кг</span>
+              </p>            
+            <a class="catalog__item_fast-veiw" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="catalog__item">
+            <img src="img/icecream4.jpg" width="267" height="267" alt="мороженое">
+            <h3>Сливочное с брусничным джемом</h3>
+            <p class="price-tag">
+                <span>325p</span>
+                <span>/кг</span>
+             </p>            
+            <a class="catalog__item_fast-veiw" href="#">Быстрый просмотр</a>
+        </div>
      </section>
      <section class="about-shop">
        <h2 class="visually-hidden">Описание</h2>
@@ -122,27 +122,26 @@
           фруктовых щербетов к
           столу</a>
      </article>
-     <section class="mailing">
+     <div class="mailing">
       <p>
        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
       </p>
       <!--Форма-->
-     </section>
+     </div>
      <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!--скрипт карты-->
-      <div class="contacts">
-        <h3>Адрес главного офиса<br>
-          и офлайн-магазина:</h3>
+      <address class="contacts">
+        Адрес главноsго офиса<br>
+        и офлайн-магазина:<br>
         <span class="contacts-bold">ул. Большая Конюшенная 19/8,<br> 
-          Санкт-Петербург</span><br>
-        <span>Для заказов по телефону:</span><br>
+        Санкт-Петербург</span><br>
+        Для заказов по телефону:<br>
         <span class="contacts-bold"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>
-        <span>(с 10 до 20 ежедневно)</span>
-        <div class="buttom">Форма обратной связи</div>
-
-      </div>
+        (с 10 до 20 ежедневно)<br>
+        <button class="button">Форма обратной связи</button>
+      </address>
      </section>
     </main>
 
