@@ -25,9 +25,34 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-nav">
-          <li><a class="serch" href="search.html">поиск</a></li>
-          <li><a class="login" href="login.html">вход</a></li>
-          <li><a class="bin" href="bin.html">корзина</a></li>
+          <li><a class="search" href="search.html">поиск</a>
+            <label class="visually-hidden" for="site-search">Поиск</label>  
+            <input type="search" id="site-search" name="search" aria-label="Поиск" placeholder="Что ищем?">
+          </li>
+          <li><a class="login" href="login.html">вход</a>
+            <section class="modal modal-login">
+                <h2 class="visually-hidden">Форма авторизации</h2>
+                <form action="#" class="login-form">
+                <label class="visually-hidden" for="user-login">Логин</label>  
+                <input type="email" name="login" id="user-login"  aria-label="Поле ввода электронной почты" placeholder="Электронная почта" required><br>
+                <label class="visually-hidden" for="user-passwod">Пароль</label> 
+                <input type="password" id="user-passwod" aria-label="Поле ввода пароля" placeholder="Пароль" required><br>
+                <button type="submit" class="button">Войти</button>
+                <p>
+                <a href="#">Забыли пароль?</a><br>
+                <a href="#">Новая регистрация</a>
+                </p>
+                </form>
+            </section>
+          </li>
+          <li><a class="bin" href="bin.html">корзина</a>
+            <section class="modal modal-basket">
+                <form class="basket-form"  action="#">
+                <h2 class="visually-hidden">Корзина</h2>
+                <button type="submit" class="button">Оформить заказ</button>
+              </form>
+            </section>
+          </li>
         </ul>
       </nav>
     </header>
@@ -35,7 +60,6 @@
    <main>
      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
     <div class="slider">
-
       <p class="working-info">
         С 10 до 20, ежедневно
         <a href="tel:+788124502525">8 812 450-25-25</a>
@@ -50,7 +74,8 @@
         <a href="#">Давайте оба!</a>
       </div>
     </div>
-    <div class="promo">
+    <section class="promo">
+      <h2 class="visually-hidden">Акционные предложения</h2>
      <div class="promo__item promo-block-1">
        <h3>Малинка даром!</h3>
        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -61,45 +86,53 @@
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
       <div class="promo-button"><a href="#">Хочу шоколадки!</a></div>
      </div>
-    </div>
+    </section>
     <section class="catalog-gallery">
       <h2>Каталог мороженого</h2>
-      <div class="catalog__item">
-        <img src="img/icecream1.jpg" width="267" height="267" alt="мороженое">
-        <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+      <article class="catalog-item">
+        <figure >
+            <img src="img/icecream1.jpg" alt="мороженое">
+            <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
+        </figure>
         <p class="price-tag">
-          <span>310p</span>
-          <span>/кг</span>
+            <span>310p</span>
+            <span>/кг</span>
         </p>
         <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
-       </div>
-       <div class="catalog__item">
-           <img src="img/icecream2.jpg" width="267" height="267" alt="мороженое">
-           <h3>Сливочно-кофейное с кусочками шоколада</h3>
-           <p class="price-tag">
-                <span>380p</span>
-                <span>/кг</span>
-              </p>            
-           <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
-        </div>
-        <div class="catalog__item">
-            <img src="img/icecream3.jpg" width="267" height="267" alt="мороженое">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <p class="price-tag">
-                <span>355p</span>
-                <span>/кг</span>
-              </p>            
-            <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
-        </div>
-        <div class="catalog__item">
-            <img src="img/icecream4.jpg" width="267" height="267" alt="мороженое">
-            <h3>Сливочное с брусничным джемом</h3>
-            <p class="price-tag">
-                <span>325p</span>
-                <span>/кг</span>
-             </p>            
-            <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
-        </div>
+      </article>
+      <article class="catalog-item">
+        <figure >
+            <img src="img/icecream2.jpg" alt="мороженое">
+            <figcaption><h3>Сливочно-кофейное с кусочками шоколада</h3></figcaption>
+        </figure>
+        <p class="price-tag">
+            <span>310p</span>
+            <span>/кг</span>
+        </p>
+        <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
+      </article>
+      <article class="catalog-item">
+        <figure >
+            <img src="img/icecream3.jpg" alt="мороженое">
+            <figcaption><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></figcaption>
+        </figure>
+        <p class="price-tag">
+            <span>310p</span>
+            <span>/кг</span>
+        </p>
+        <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
+      </article>
+      <article class="catalog-item">
+        <figure >
+            <img src="img/icecream4.jpg" alt="мороженое">
+            <figcaption><h3>Сливочное крем-брюле с карамельной подливкой</h3></figcaption>
+        </figure>
+        <p class="price-tag">
+            <span>310p</span>
+            <span>/кг</span>
+        </p>
+        <a class="catalog__fast-veiw" href="#">Быстрый просмотр</a>
+      </article>
      </section>
      <section class="about-shop">
        <h2 class="visually-hidden">Описание</h2>
@@ -122,13 +155,18 @@
           фруктовых щербетов к
           столу</a>
      </article>
-     <div class="mailing">
+     <section class="mailing">
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p>
        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
       </p>
-      <!--Форма-->
-     </div>
+      <form action="#">
+        <label class="visually-hidden" for="user-mailing">Электронная почта</label>
+        <input type="email" name="email" id="user-mailing" placeholder="Электронная почта">
+        <button type="submit" class="button">Отправить</button>
+      </form>
+     </section>
      <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!--скрипт карты-->
@@ -144,7 +182,6 @@
       </address>
      </section>
     </main>
-
     <footer>
       <div class="social">
        <ul>
@@ -167,6 +204,19 @@
         <p>сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">html acdemy</a> &copy; 2019</p>
       </div>
     </footer>
-
+    <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" action="#">
+        <p>Мы обязательно вам ответим!</p>
+        <label class="visually-hidden" for="user-name">Имя</label>
+        <input type="text" name="user-name" id="user-name" aria-label="Поле ввода имени" placeholder="Как вас зовут?" required><br>
+        <label class="visually-hidden" for="user-email">Электронная почта</label>
+        <input type="email" name="user-email" id="user-email"  aria-label="Поле ввода электронной почты" placeholder="Ваша почта для ответа" required><br>
+        <label class="visually-hidden" for="user-comment">Комментарий</label>
+        <textarea name="comment" rows="6" id="user-comment" aria-label="поле ввода комментария" placeholder="Напишите что-нибудь..."></textarea><br>
+        <button type="submit" class="button" >Отправить</button>
+        <button type="button" class="button-close" aria-label="Закрыть форму"></button>
+        </form>
+    </section>
   </body>
 </html>

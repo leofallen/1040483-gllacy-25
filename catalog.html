@@ -25,9 +25,33 @@
             <li><a href="#">О компании</a></li>
           </ul>
           <ul class="user-nav">
-              <li><a class="serch" href="search.html">поиск</a></li>
-              <li><a class="login" href="login.html">вход</a></li>
-              <li><a class="bin" href="bin.html">корзина</a></li>
+              <li><a class="search" href="search.html">поиск</a>
+                <input type="search" name="search" value="Что ищем?" aria-label="Поиск">
+              </li>
+              <li><a class="login" href="login.html">вход</a>
+                <section class="modal modal-login">
+                  <h2 class="visually-hidden">Форма авторизации</h2>
+                  <form action="#" class="login-form">
+                    <label class="visually-hidden" for="user-login">Логин</label>  
+                    <input type="email" name="login" id="user-login"  aria-label="Поле ввода электронной почты" placeholder="Электронная почта" required><br>
+                    <label class="visually-hidden" for="user-passwod">Пароль</label> 
+                    <input type="password" id="user-passwod" aria-label="Поле ввода пароля" placeholder="Пароль" required><br>
+                    <button type="submit" class="button">Войти</button>
+                    <p>
+                    <a href="#">Забыли пароль?</a><br>
+                    <a href="#">Новая регистрация</a>
+                    </p>
+                  </form>
+                  </section>
+              </li>
+              <li><a class="bin" href="bin.html">корзина</a>
+                <section class="modal modal-basket">
+                  <form class="basket-form"  action="#">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <button type="submit" class="button">Оформить заказ</button>
+                  </form>
+                </section>
+              </li>
           </ul>
           <p class="working-info">
             <span>С 10 до 20, ежедневно</span>
@@ -147,6 +171,4 @@
             <p>сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">html acdemy</a> &copy; 2019</p>
           </div>
     </footer>
-    
-    
   </body>
