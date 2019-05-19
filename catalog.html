@@ -7,57 +7,98 @@
   <body>
 
     <header>
-        <nav class="main-nav">
-          <a href="index.html"><img src="img/gllacy-logo.svg" alt="логотип Глейси"></a>
-          <ul class="site-nav">
-            <li><a href="#">Каталог</a>
-              <div class="sub-menu">
-                <span>Новинки</span>
-                <ul>
-                  <li><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
-          </ul>
-          <ul class="user-nav">
-              <li><a class="search" href="search.html">поиск</a>
-                <input type="search" name="search" value="Что ищем?" aria-label="Поиск">
-              </li>
-              <li><a class="login" href="login.html">вход</a>
-                <section class="modal modal-login">
-                  <h2 class="visually-hidden">Форма авторизации</h2>
-                  <form action="#" class="login-form">
-                    <label class="visually-hidden" for="user-login">Логин</label>  
-                    <input type="email" name="login" id="user-login"  aria-label="Поле ввода электронной почты" placeholder="Электронная почта" required><br>
-                    <label class="visually-hidden" for="user-passwod">Пароль</label> 
-                    <input type="password" id="user-passwod" aria-label="Поле ввода пароля" placeholder="Пароль" required><br>
-                    <button type="submit" class="button">Войти</button>
-                    <p>
-                    <a href="#">Забыли пароль?</a><br>
-                    <a href="#">Новая регистрация</a>
-                    </p>
-                  </form>
-                  </section>
-              </li>
-              <li><a class="bin" href="bin.html">корзина</a>
-                <section class="modal modal-basket">
-                  <form class="basket-form"  action="#">
-                    <h2 class="visually-hidden">Корзина</h2>
-                    <button type="submit" class="button">Оформить заказ</button>
-                  </form>
-                </section>
-              </li>
-          </ul>
-          <p class="working-info">
-            <span>С 10 до 20, ежедневно</span>
-            <span><a href="tel:+788124502525">8 812 450-25-25</a></span>
-          </p>         
-        </nav>    
+      <img src="img/gllacy-logo.svg" alt="логотип Глейси">
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li><a href="catalog.html">Каталог</a>
+          <div class="sub-menu">
+            <span>Новинки</span>
+            <ul>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </div>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
+        </ul>
+        <ul class="user-nav">
+          <li>
+            <a class="search" href="search.html">поиск</a>
+            <form class="modal modal-search" action="#" >
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <label class="visually-hidden" for="user-search">Поиск</label>  
+              <input type="search" id="user-search" name="search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li>
+            <a class="login" href="login.html">вход</a>
+            <form class="modal modal-login" action="#">
+              <h2 class="visually-hidden">Форма авторизации</h2>
+              <label class="visually-hidden" for="user-login">Логин</label>  
+              <input type="email" name="login" id="user-login"  placeholder="Электронная почта" required>
+              <label class="visually-hidden" for="user-passwod">Пароль</label> 
+              <input type="password" id="user-passwod"  placeholder="Пароль" required>
+              <button type="submit" class="button">Войти</button>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
+          <li>
+            <a class="basket" href="basket.html">корзина</a>
+            <form class="modal modal-basket"  action="#">
+                <h2 class="visually-hidden">Корзина</h2>
+                <table>
+                  <tr>
+                    <td>
+                      <img src="img/Х.svg"  width="10" alt="close">
+                    </td>
+                    <td>
+                      <img src="img/icecream1.jpg" width="30" alt="">
+                    </td>
+                    <td>
+                      Пломбир с аапельсиновым джемом
+                    </td>
+                    <td>
+                      <span>1.5кг х</span>
+                      <span>200p руб</span>
+                    </td>
+                    <td>
+                      300 руб
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="img/Х.svg"  width="10" alt="close">
+                    </td>
+                    <td>
+                      <img src="img/icecream3.jpg" width="30" alt="">
+                    </td>
+                    <td>
+                      Клубничный пломбир с присыпкой из белого шиколада
+                    </td>
+                    <td>
+                      <span>1.5кг х</span>
+                      <span>300p руб</span>
+                    </td>
+                    <td>
+                      450 руб
+                    </td>
+                  </tr>
+                </table>
+                <button type="submit" class="button">Оформить заказ</button>
+            </form>
+          </li>
+        </ul>
+        <p class="working-info">
+          <span>С 10 до 20, ежедневно</span>
+          <span><a href="tel:+788124502525">8 812 450-25-25</a></span>
+        </p>         
+      </nav>    
     </header>
     
     <main>
