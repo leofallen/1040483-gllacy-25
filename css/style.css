@@ -38,7 +38,6 @@ a {
 
 
 .main-nav {
-  font-size: 16px;
   font-weight: bold;
   line-height: 18px;
 }
@@ -48,12 +47,6 @@ a {
   list-style: none;
 }
 
-
-
-.main-nav a,
-.user-nav a {
-  color: #ffffff;
-}
 
 /*кака-тj беда с наследованием розового ховера на ссылках с классом button. переопределение ниже не перебивает*/
 a:not(.main-nav):hover,
@@ -71,7 +64,6 @@ a:not(.main-nav):focus {
 
 .about-shop {
   width: 1146px;
-  height: 306px;
   color: #323232;
   background-color: #ece0c5;
   background-image: url("../img/wafer.jpg");
@@ -83,12 +75,6 @@ a:not(.main-nav):focus {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-}
-
-.about-shop__item {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: left;
 }
 
 .blog {
@@ -109,16 +95,13 @@ a:not(.main-nav):focus {
 .blog h3 {
   font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
   color: #323232;
 }
 
 .mailing {
   width: 560px;
   height: 220px;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
   color: #5a5a5a;
   border-radius: 15px;
   background-color: #f8f7f4;
@@ -133,10 +116,11 @@ a:not(.main-nav):focus {
 
 .button:hover,
 .button:focus {
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  box-shadow: 0px 2px 2px 0 #ac1000;
-  background: linear-gradient(to top, #e74a35, #f26843), 
-              linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0 #ac1000;
 }
 
 .mailing__button {
@@ -161,19 +145,12 @@ a:not(.main-nav):focus {
 }
 
 
-.promo__button {
-  color: #ffffff;
-}
 
 .slider-button {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   color: #ffffff;
 }
 
-.main-footer a {
-  text-decoration: none;
-  color: #ffffff;
-}
 
 .social__items,
 .gen-info__items,
@@ -234,7 +211,6 @@ a:not(.main-nav):focus {
   width: 165px;
   padding: 10px;
   border-radius: 20px;
-  
 }
 
 .site-nav__catalo-mod {
@@ -248,21 +224,6 @@ a:not(.main-nav):focus {
   
 }
 
-.working-info {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.catalog-gallery__item img {
-  border-radius: 50%;
-}
-
-.catalog-gallery__item h3 {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-}
-
 .working-info span:nth-of-type(1) {
   font-size: 14px;
   line-height: 16px;
@@ -272,6 +233,15 @@ a:not(.main-nav):focus {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.catalog-gallery__item img {
+  border-radius: 50%;
+}
+
+.catalog-gallery__item h3 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .price-tag {
@@ -295,9 +265,3 @@ a:not(.main-nav):focus {
   line-height: 18p0x;
   font-weight: 500;
 }
-
-
-
-
-
-
