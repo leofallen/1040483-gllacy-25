@@ -47,10 +47,8 @@ a {
   list-style: none;
 }
 
-
-/*кака-тj беда с наследованием розового ховера на ссылках с классом button. переопределение ниже не перебивает*/
-a:not(.main-nav):hover,
-a:not(.main-nav):focus {
+.hover-focus:hover,
+.hover-focus:focus {
   color: #ffbc9e;      
 }
 
