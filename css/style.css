@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.modal,
+.social__items,
+.contacts,
+.catalog__fast-veiw,
+.sub-menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.main-nav {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.site-nav,
+.user-nav {
+  list-style: none;
+}
+
+
+
+.main-nav a,
+.user-nav a {
+  color: #ffffff;
+}
+
+/*кака-тj беда с наследованием розового ховера на ссылках с классом button. переопределение ниже не перебивает*/
+a:not(.main-nav):hover,
+a:not(.main-nav):focus {
+  color: #ffbc9e;      
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.about-shop {
+  width: 1146px;
+  height: 306px;
+  color: #323232;
+  background-color: #ece0c5;
+  background-image: url("../img/wafer.jpg");
+  background-repeat: repeat;
+  border-radius: 15px;
+}
+
+.about-shop__headline {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.about-shop__item {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.blog {
+  width: 560px;
+  height: 220px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  background-image: url("../img/blog.jpg")
+}
+.blog a {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #323232;
+}
+
+.blog h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #323232;
+}
+
+.mailing {
+  width: 560px;
+  height: 220px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #5a5a5a;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  background-image: url("../img/mailing.jpg")
+}
+
+.button {
+  font: inherit;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.button:hover,
+.button:focus {
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background: linear-gradient(to top, #e74a35, #f26843), 
+              linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.mailing__button {
+  width: 127px;
+  height: 42px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border-radius: 20px;
+  border :none;
+}
+
+
+.contacts__button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 252px;
+  height: 44px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+.promo__button {
+  color: #ffffff;
+}
+
+.slider-button {
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  color: #ffffff;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social__items,
+.gen-info__items,
+.breadcrumbs,
+.pagination-list {
+  list-style: none;
+}
+
+.copyright__html-academy-logo {
+  width: 108px;
+  height: 39px;
+}
+
+.gen-info__items {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.promo__item {
+  width: 560px;
+  height: 229px;
+}
+
+.promo__item h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.promo__item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.promo-block-1 {
+  background-image: url("../img/promo-1.jpg");
+  border-radius: 15px;
+}
+
+.promo-block-2 {
+  background-image: url("../img/promo-2.jpg");
+  border-radius: 15px;
+}
+
+.promo__button {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 165px;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+
+.site-nav__catalo-mod {
+  display: block;
+  width: 87px;
+  padding: 7px 0;
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #d07058;
+  
+}
+
+.working-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-gallery__item img {
+  border-radius: 50%;
+}
+
+.catalog-gallery__item h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.working-info span:nth-of-type(1) {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.working-info span:nth-of-type(2) {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.price-tag {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price-tag span:nth-of-type(1) {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.price-tag span:nth-of-type(2) {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.pagination-list {
+  font-size: 16px;
+  line-height: 18p0x;
+  font-weight: 500;
+}
+
+
+
+
+
+
