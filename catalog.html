@@ -10,11 +10,12 @@
   <body>
 
   <header class="main-header">
+    <div class="main-header__container">
       <img class="main-header__logo" src="img/gllacy-logo.svg" alt="логотип Глейси">
       <nav class="main-nav">
         <ul class="site-nav">
           <li>
-            <span class="site-nav__catalo-mod">Каталог</span>
+            <span class="site-nav__catalog-mod">Каталог</span>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -94,25 +95,26 @@
           </li>
         </ul>
       </nav>
-      <p class="working-info main-header__working-info">
-        <span>С 10 до 20, ежедневно</span><br>
-        <span><a class="pink-hover" href="tel:+788124502525">8 812 450-25-25</a></span>
-      </p>
+    </div> 
     </header>
-
-   
     <main>
-      <h1>Сливочное мороженое</h1>
-      <ul class="breadcrumbs">
-        <li><a class="pink-hover" href="index.html">Главная</a></li>
-        <li><a class="pink-hover" href="#">Каталог</a></li>
-        <li><span>Сливочное</span></li>
-      </ul>
+      <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+          <li><a class="pink-hover" href="index.html">Главная</a></li>
+          <li><a class="pink-hover" href="#">Каталог</a></li>
+          <li><span>Сливочное</span></li>
+        </ul>
+        <p class="working-info">
+            <span>С 10 до 20, ежедневно</span><br>
+            <span><a class="pink-hover" href="tel:+788124502525">8 812 450-25-25</a></span>
+        </p>
+      </div>
+      <h1 class="main-headline">Сливочное мороженое</h1>
       <div class="filter">
         <!--Здесь будет форма-->
       </div>
       <section class="catalog-gallery">
-        <h2>Каталог мороженого</h2>
+        <h2 class="visually-hidden">Каталог мороженого</h2>
         <article class="catalog-gallery__item">
           <figure >
               <img src="img/icecream1.jpg" alt="мороженое">
@@ -144,7 +146,7 @@
               <span>310p</span>
               <span>/кг</span>
           </p>
-          <a class="catalog-gallery__fast-veiw pink-hover" href="#">Быстрый просмотр</a>
+          <a class="catalog-gallery__fast-veiw hover-focus" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-gallery__item">
           <figure >
@@ -161,6 +163,28 @@
           <figure >
               <img src="img/icecream5.jpg" alt="мороженое">
               <figcaption><h3>Сливочное с брусничным джемом</h3></figcaption>
+          </figure>
+          <p class="price-tag">
+              <span>310p</span>
+              <span>/кг</span>
+          </p>
+          <a class="catalog-gallery__fast-veiw pink-hover" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-gallery__item">
+          <figure >
+              <img src="img/icecream6.jpg" alt="мороженое">
+              <figcaption><h3>Сливочно-черничное с цельными ягодами черники</h3></figcaption>
+          </figure>
+          <p class="price-tag">
+              <span>310p</span>
+              <span>/кг</span>
+          </p>
+          <a class="catalog-gallery__fast-veiw pink-hover" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-gallery__item">
+          <figure >
+              <img src="img/icecream6.jpg" alt="мороженое">
+              <figcaption><h3>Сливочно-черничное с цельными ягодами черники</h3></figcaption>
           </figure>
           <p class="price-tag">
               <span>310p</span>

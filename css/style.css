@@ -74,7 +74,7 @@ a {
 
 .about-shop {
   width: 1146px;
-  margin: 40px 0;
+  margin-bottom: 40px;
   padding:20px;
   box-sizing: border-box;
   color: #323232;
@@ -270,7 +270,7 @@ a {
   margin-top: 40px;
 }
 
-.site-nav__catalo-mod {
+.site-nav__catalog-mod {
   display: block;
   width: 87px;
   padding: 7px 0;
@@ -278,6 +278,11 @@ a {
   font-size: 16px;
   text-align: center;
   background-color: #d07058;
+}
+
+.working-info {
+  text-align: right;
+  margin: 0;
   
 }
 
@@ -292,11 +297,18 @@ a {
   font-weight: bold;
 }
 
+.catalog-gallery__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
 .catalog-gallery__item img {
   border-radius: 50%;
 }
 
 .catalog-gallery__item h3 {
+  width: 260px;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -323,17 +335,17 @@ a {
 }
 
 .pagination-list {
+  display: flex;
   font-size: 16px;
-  line-height: 18p0x;
+  line-height: 18px;
   font-weight: 500;
+  margin: 60px 0 30px auto;
 }
 
 /*сетка*/
 
 .main-header {
   width: 100%;
-  height: 73px;
-  
 }
 
 .main-header__container {
@@ -348,6 +360,7 @@ a {
 .main-nav {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .user-nav {
@@ -359,7 +372,7 @@ a {
 .site-nav {
   display: flex;
   padding-left: 0;
-  
+  align-items: center;
 }
 
 .site-nav> li {
@@ -386,6 +399,8 @@ main {
 .catalog-gallery {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
 
 .blog-mailing-container {
@@ -453,5 +468,21 @@ main {
   
 }
 
+.main-headline {
+  margin-right: auto;
+}
 
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
