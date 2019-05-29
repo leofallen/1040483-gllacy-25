@@ -41,15 +41,15 @@
           </ul>
           <ul class="user-nav">
             <li class="user-nav__serach-form">
-              <a class="search" href="search.html">поиск</a>
+              <a class="search" href="search.html"></a>
               <form class="modal modal-search" action="#" >
                 <h2 class="visually-hidden">Форма поиска</h2>
                 <label class="visually-hidden" for="user-search">Поиск</label>  
                 <input type="search" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </li>
-            <li>
-              <a class="login" href="login.html">вход</a>
+            <li class="login">
+              <a class="login-link" href="login.html">Вход</a>
               <form class="modal modal-login" action="#">
                 <h2 class="visually-hidden">Форма авторизации</h2>
                 <label class="visually-hidden" for="user-login">Логин</label>  
@@ -63,8 +63,8 @@
                 </p>
               </form>
             </li>
-            <li>
-              <a class="basket" href="basket.html">корзина</a>
+            <li class="basket" >
+              <a class="basket-link" href="basket.html">Пусто</a>
               <form class="modal modal-basket"  action="#">
                   <h2 class="visually-hidden">Корзина</h2>
                   <table>
@@ -115,11 +115,13 @@
     
    <main>
      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
-     <section class="slider visually-hidden">
+     <section class="slider">
        <h2 class="visually-hidden" >Слайдер</h2>
        <p class="working-info slider__working-info">
-         С 10 до 20, ежедневно
-         <a class="pink-hover" href="tel:+788124502525">8 812 450-25-25</a>
+        <span>С 10 до 20, ежедневно</span><br>
+        <span>
+          <a class="pink-hover" href="tel:+788124502525">8 812 450-25-25</a>
+        </span>
        </p>
        <ul class="slides-switches">
          <li class="slide-radio">
@@ -139,11 +141,14 @@
          </li>
        </ul>
      <div class="slides">
-       <img src="img/slide-1.png" alt="слайд-1">
-       <img src="img/slide-2.png" alt="слайд-2">
-       <img src="img/slide-3.png" alt="слайд-3">
+       <img class="slide-1" src="./img/slide-1.png" alt="слайд-1">
+       <h3 class="slides__headline slide-1">Крем-брюле и пломбир с малиновым джемом</h3>
+       <img class="slide-2" src="./img/slide-2.png" alt="слайд-2">
+       <h3 class="slides__headline slide-2">Шоколадный пломбир и лимонный сорбет </h3>
+       <img class="slide-3" src="./img/slide-3.png" alt="слайд-3">
+       <h3 class="slides__headline slide-3">Пломбир с помадкой<br> и клубничный щербет</h3>
      </div>
-     <a class=" button slider-button" href="#">Давайте оба!</a>
+     <a class=" button slider__button" href="#">Давайте оба!</a>
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Акционные предложения</h2>
@@ -167,7 +172,8 @@
               <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
             </figure>
           <p class="price-tag">
-              <span>310p</span>
+              <span>310</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>
               <span>/кг</span>
           </p>
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
@@ -179,7 +185,8 @@
             <figcaption><h3>Сливочно-кофейное с кусочками шоколада</h3></figcaption>
         </figure>
         <p class="price-tag">
-            <span>310p</span>
+            <span>310</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>
             <span>/кг</span>
         </p>
         <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
@@ -191,7 +198,8 @@
             <figcaption><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></figcaption>
         </figure>
         <p class="price-tag">
-            <span>310p</span>
+            <span>310</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>
             <span>/кг</span>
         </p>
         <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
@@ -203,7 +211,8 @@
             <figcaption><h3>Сливочное крем-брюле с карамельной подливкой</h3></figcaption>
         </figure>
         <p class="price-tag">
-            <span>310p</span>
+            <span>310</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>
             <span>/кг</span>
         </p>
         <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
@@ -249,25 +258,26 @@
      </div>
      
     </main>
+    <div class="map-container">
     <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9377ff5d5796a3e80e52b6dfe9832688ea543c406412418e53b7a502e5894f19&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
       <address class="contacts">
         Адрес главноsго офиса<br>
         и офлайн-магазина:<br>
         <span class="contacts-bold">ул. Большая Конюшенная
           <br> 19/8, Санкт-Петербург
-        </span><br>
+        </span>
         Для заказов по телефону:<br>
         <span class="contacts-bold">
           <a class="contacts__tel pink-hover" href="tel:+78124502525">
             8 812 450-25-25
           </a>
-        </span><br>
+        </span>
         (с 10 до 20 ежедневно)<br>
         <a class="button contacts__button" href="#">Форма обратной связи</a>
       </address>
      </section>
+    </div>
     <footer class="main-footer">
       
        <ul class="social">
@@ -279,10 +289,10 @@
       
       
         <ul class="gen-info">
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+          <li><a class="pink-hover" href="#">Для поставщиков</a></li>
+          <li><a class="pink-hover" href="#">О производстве</a></li>
+          <li><a class="pink-hover" href="#">Наши документы</a></li>
+          <li><a class="pink-hover" href="#">Экологические стандарты</a></li>
         </ul>
       
       <div class="copyright">
