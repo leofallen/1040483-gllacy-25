@@ -19,25 +19,15 @@
               <div class="site-nav__catalog-sub-menu sub-menu">
                 <span>Новинки</span>
                 <ul>
-                  <li>
-                    <a href="catalog.html">Сливочное</a>
-                  </li>
-                  <li>
-                    <a href="#">Щербеты</a>
-                  </li>
-                  <li>
-                    <a href="#">Фруктовый лед</a>
-                  </li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
                 </ul>
               </div>
             </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">О Компании</a>
-            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
           </ul>
           <ul class="user-nav">
             <li class="user-nav__serach-form">
@@ -281,10 +271,10 @@
     <footer class="main-footer">
       
        <ul class="social">
-         <li><a class="social__button social__button_twitter pink-hover" href="#">Твиттер</a></li>
-         <li><a class="social__button social__button_instagram pink-hover" href="#">Инстаграм</a></li>
-         <li><a class="social__button social__button_facebook pink-hover" href="#">Фейсбук</a></li>
-         <li><a class="social__button social__button_vk pink-hover" href="#">Вконтакте</a></li>
+         <li><a class="social__twitter" href="#" aria-label="твиттер"></a></li>
+         <li><a class="social__instagram" href="#" aria-label="инстаграмм"></a></li>
+         <li><a class="social__facebook" href="#" aria-label="фейсбук"></a></li>
+         <li><a class="social__vk" href="#" aria-label="вконтакте"></a></li>
        </ul>
       
       
@@ -303,7 +293,7 @@
 
       <form class="modal modal-feedback" action="#">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p>Мы обязательно вам ответим!</p>
+        <p class="modal-feedback__headline">Мы обязательно вам ответим!</p>
         <label class="visually-hidden" for="user-name">Имя</label>
         <input type="text" name="user-name" id="user-name" aria-label="Поле ввода имени" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="user-email">Электронная почта</label>
@@ -311,7 +301,7 @@
         <label class="visually-hidden" for="user-comment">Комментарий</label>
         <textarea name="comment" rows="6" id="user-comment" aria-label="поле ввода комментария" placeholder="Напишите что-нибудь..." required></textarea>
         <button type="submit" class="button modal-feedback__button" >Отправить</button>
-        <button type="button" class="button-close" aria-label="Закрыть форму"></button>
+        <button type="button" class="modal-feedback__button-close" aria-label="Закрыть форму"></button>
       </form>
   
   </body>

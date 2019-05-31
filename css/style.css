@@ -68,6 +68,11 @@ a {
   color: #ffbc9e;      
 }
 
+.site-nav a {
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
 .site-nav a:hover,
 .site-nav a:focus,
 .user-nav a:hover,
@@ -790,8 +795,6 @@ main {
   left: 15px;
 }
 
-
-
 .basket-link {
   position: relative;
   padding: 7px 17px 7px 40px;
@@ -809,17 +812,162 @@ main {
   left: 15px;
 }
 
+.login-link:hover path {
+  fill: #323232;
+}
 
 /* модалки */
 
-
-
-
-
 .modal-search {
+  display: none;
   width: 341px;
   height: 84px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
+  right: 400px;
+  top: 62px;
+}
+
+.modal-search input {
+  font-size: 14px;
+  line-height: 24px;
+  width: 311px;
+  height: 44px;
+  border: solid 1px #d3d3d2;
+  margin: 20px 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* .modal-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 478px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+}
+
+.modal-feedback__headline {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-feedback input {
+  width: 267px;
+  height: 44px;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.modal-feedback textarea {
+  width: 428px;
+  height: 155px;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.modal-feedback__button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fefefe;
+  width: 139px;
+  height: 44px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-left: auto;
+} */
+
+/* .modal-feedback__button-close::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/Х.svg");
+  background-repeat: no-repeat;
+} */
+
+
+/* футер */
+
+.social {
+  display: flex;
+  position: relative;
+  
+}
+
+.social__twitter::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  left: 2px;
+  bottom: -10px;
+}
+
+.social__instagram::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/insta.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  left: 50px;
+  bottom: -10px;
+}
+
+.social__facebook::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  left: 98px;
+  bottom: -10px;
+}
+
+.social__vk::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  left: 146px;
+  bottom: -10px;
+}
+
+.social__twitter:hover::before,
+.social__instagram:hover::before,
+.social__facebook:hover::before,
+.social__vk:hover::before {
+  opacity: 1;
 }
