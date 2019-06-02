@@ -455,12 +455,14 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
+  word-spacing: -7px;
 }
 
 .price-tag span:nth-of-type(2) {
   font-size: 30px;
   line-height: 30px;
   font-weight: bold;
+  margin-left: -5px;
 }
 
 .pagination-list {
@@ -544,6 +546,8 @@ main {
   align-items: center;
   width: 1146px;
   margin: 0 auto;
+  padding: 18px 0;
+
 }
 
 .map-container{
@@ -633,6 +637,11 @@ main {
   width: 220px;
   margin: 0;
   padding: 0;
+}
+
+.breadcrumbs li {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .breadcrumbs-container {
@@ -968,6 +977,33 @@ main {
 .social__twitter:hover::before,
 .social__instagram:hover::before,
 .social__facebook:hover::before,
-.social__vk:hover::before {
+.social__vk:hover::before,
+.social__twitter:focus::before,
+.social__instagram:focus::before,
+.social__facebook:focus::before,
+.social__vk:focus::before {
   opacity: 1;
 }
+
+.gen-info {
+  position: relative;
+  column-count: 2;
+  column-width: 161px;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.gen-info li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  left: -22px;
+  top: 3px;
+}
+
