@@ -52,7 +52,7 @@ body > * > * > * {
   border-radius: 5px;
   box-sizing: border-box;
   text-indent: 15px;
-  top: 37px;
+  top: 30px;
   left: -7px;
   z-index: 1;
 }
@@ -293,6 +293,11 @@ a {
     box-shadow: 0px 2px 2px 0 #ac1000;
 }
 
+.button:active {
+  background: linear-gradient(to bottom,#e74a35,#f26843);
+  box-shadow: inset 0 1px 2px 0 #942718;
+}
+
 .mailing__button {
   width: 127px;
   height: 42px;
@@ -483,7 +488,7 @@ a {
   opacity: 0.2;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  z-index: 1;
+  z-index: -1;
 }
 
 .catalog-gallery__item:hover .catalog-gallery__button,
@@ -799,10 +804,45 @@ main {
 .slide-3 {
  position: absolute;
  display: none;
-} 
-.slide-radio {
-  display: none;
 }
+
+.slides-switches {
+  display: flex;
+  position: absolute;
+  list-style: none;
+  width: 60px;
+  justify-content: space-between;
+  padding: 0;
+  left: -50px;
+  bottom: 63px;
+}
+
+.slide-radio {
+  position: relative;
+}
+
+.slide-radio_indicator {
+  margin-right: 8px
+}
+
+.slide-radio input[type="radio"] + .slide-radio_indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.slide-radio input[type="radio"]:checked + .slide-radio_indicator {
+  background-color: #fff;
+}
+
+
+/* .slide-radio {
+  display: none;
+} */
 
 /* кнопки, меню пользователя*/
 
@@ -880,12 +920,26 @@ main {
   content: "";
   position: absolute;
   width: 21px;
-  height: 19px;
+  height: 21px;
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   left: 15px;
 }
 
+.basket_catalog {
+  background-color: #fff;
+  color: #323232;
+}
+
+.basket_catalog::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/basket-full.svg");
+  background-repeat: no-repeat;
+  left: 15px;
+}
 
 /* модалки */
 
@@ -1005,13 +1059,18 @@ main {
 }
 
 .modal-feedback {
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 478px;
+  height: 443;
   padding: 15px 25px;
   border-radius: 10px;
   background-color: #f8f7f4;
   box-sizing: border-box;
+  top: 250px;
+  left: 50%;
+  margin-left: -232px;
 }
 
 .modal-feedback__headline {
@@ -1055,13 +1114,18 @@ main {
   margin-left: auto;
 } 
 
- .modal-feedback__button-close::before {
-  content: "";
+ .modal-feedback__close {
   position: absolute;
-  width: 18px;
-  height: 17px;
-  background-image: url("../img/Х.svg");
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-image: url("../img/close.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8f7f4;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .modal {

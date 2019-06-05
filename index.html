@@ -116,20 +116,23 @@
         </span>
        </p>
        <ul class="slides-switches">
-         <li class="slide-radio">
-           <button class="slide-button">
-             слайд-1
-            </button>
+          <li>
+           <label  class="slide-radio">
+            <input type="radio" name="radio" class="visually-hidden slide-1">
+              <span class="slide-radio_indicator"></span>
+           </label>
+          </li>
+         <li>
+           <label  class="slide-radio">
+            <input type="radio" name="radio" class="visually-hidden slide-2">
+              <span class="slide-radio_indicator"></span>
+           </label>
          </li>
-         <li class="slide-radio">
-           <button class="slide-button">
-             слайд-2
-            </button>
-         </li>
-         <li class="slide-radio">
-           <button class="slide-button">
-             слайд-3
-            </button>
+         <li> 
+           <label  class="slide-radio">
+            <input type="radio" name="radio" class="visually-hidden slide-3">
+              <span class="slide-radio_indicator"></span>
+           </label>
          </li>
        </ul>
      <div class="slides">
@@ -311,7 +314,7 @@
         <label class="visually-hidden" for="user-comment">Комментарий</label>
         <textarea name="comment" rows="6" id="user-comment" aria-label="поле ввода комментария" placeholder="Напишите что-нибудь..." required></textarea>
         <button type="submit" class="button modal-feedback__button" >Отправить</button>
-        <button type="button" class="modal-feedback__button-close" aria-label="Закрыть форму"></button>
+        <button type="button" class="modal-feedback__close" aria-label="Закрыть"></button>
       </form>
   
   </body>
