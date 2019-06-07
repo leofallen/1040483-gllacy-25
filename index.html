@@ -15,19 +15,19 @@
         <nav class="main-nav">
           <ul class="site-nav">
             <li>
-              <a class="site-nav__catalog-link main-header__link" href="catalog.html">Каталог</a>
+              <a class="site-nav__catalog-link main-header__link link-border" href="catalog.html">Каталог</a>
               <ul class="site-nav__sub-menu">
                 <li>Новинки</li>
                 <div class="site-nav__border"></div>
-                <li><a href="#">Сливочное</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
               </li>
               </ul>
             </li>
-            <li><a class="main-header__link" href="#">Доставка и оплата</a></li>
-            <li><a class="main-header__link" href="#">О Компании</a></li>
+            <li><a class="main-header__link link-border" href="#">Доставка и оплата</a></li>
+            <li><a class="main-header__link link-border" href="#">О Компании</a></li>
           </ul>
           <ul class="user-nav">
             <li class="user-nav__serach-form  user-nav__item">
@@ -57,48 +57,6 @@
             </li>
             <li class="basket" >
               <a class="basket-link" href="basket.html">Пусто</a>
-              <form class="modal modal-basket"  action="#">
-                  <h2 class="visually-hidden">Корзина</h2>
-                  <table class="basket__table">
-                    <tr>
-                      <td>
-                        <img src="img/Х.svg"  width="10" alt="close">
-                      </td>
-                      <td class="basket__item-image">
-                        <img src="./img/ice-cream1.png" width="30" alt="">
-                      </td>
-                      <td class="basket__item-info">
-                        Пломбир с апельсиновым джемом
-                      </td>
-                      <td>
-                        <span>1.5кг х</span>
-                        <span>200p руб</span>
-                      </td>
-                      <td>
-                        300 руб
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                          <img src="img/Х.svg"  width="10" alt="close">
-                      </td>
-                      <td class="basket__item-image">
-                        <img src="./img/ice-cream3.png" width="30" alt="">
-                      </td>
-                      <td class="basket__item-info">
-                        Клубничный пломбир с присыпкой из белого шиколада
-                      </td>
-                      <td>
-                        <span>1.5кг х</span>
-                        <span>300p руб</span>
-                      </td>
-                      <td>
-                        450 руб
-                      </td>
-                    </tr>
-                  </table>
-                  <button type="submit" class="button">Оформить заказ</button>
-              </form>
             </li>
           </ul>
         </nav>
@@ -118,7 +76,7 @@
        <ul class="slides-switches">
           <li>
            <label  class="slide-radio">
-            <input type="radio" name="radio" class="visually-hidden slide-1">
+            <input type="radio" name="radio" class="visually-hidden slide-1" checked>
               <span class="slide-radio_indicator"></span>
            </label>
           </li>
@@ -158,14 +116,15 @@
       <a class="button promo__button" href="#">Хочу шоколадки!</a>
      </div>
     </section>
-    <section class="catalog-gallery">
-      <h2 class="visually-hidden">Каталог мороженого</h2>
+    <div class="gallery-container">
+      <section class="catalog-gallery">
+        <h2 class="visually-hidden">Каталог мороженого</h2>
         <article class="catalog-gallery__item">
           <div class="catalog-gallery__item_hover"></div>
           <figure>
-              <img src="./img/ice-cream1.png" alt="мороженое">
-              <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
-            </figure>
+            <img src="./img/ice-cream1.png" alt="мороженое">
+            <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
+          </figure>
           <p class="price-tag">
               <span>310 &#x20bd;</span>
               <span>/кг</span>
@@ -173,42 +132,43 @@
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-gallery__item">
-        <div class="catalog-gallery__item_hover"></div>
-        <figure>
+          <div class="catalog-gallery__item_hover"></div>
+          <figure>
             <img src="./img/ice-cream2.png" alt="мороженое">
             <figcaption><h3>Сливочно-кофейное с кусочками шоколада</h3></figcaption>
-        </figure>
-        <p class="price-tag">
+          </figure>
+          <p class="price-tag">
             <span>380 &#x20bd;</span>
             <span>/кг</span>
-        </p>
-        <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
-      </article>
-      <article class="catalog-gallery__item">
-        <div class="catalog-gallery__item_hover"></div>
-        <figure >
+          </p>
+          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-gallery__item">
+          <div class="catalog-gallery__item_hover"></div>
+          <figure >
             <img src="./img/ice-cream3.png" alt="мороженое">
             <figcaption><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></figcaption>
-        </figure>
-        <p class="price-tag">
+          </figure>
+          <p class="price-tag">
             <span>355 &#x20bd;</span>
             <span>/кг</span>
-        </p>
-        <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
-      </article>
-      <article class="catalog-gallery__item">
-        <div class="catalog-gallery__item_hover"></div>
-        <figure >
+          </p>
+          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-gallery__item">
+          <div class="catalog-gallery__item_hover"></div>
+          <figure >
             <img src="./img/ice-cream4.png" alt="мороженое">
             <figcaption><h3>Сливочное крем-брюле с карамельной подливкой</h3></figcaption>
-        </figure>
-        <p class="price-tag">
+          </figure>
+          <p class="price-tag">
             <span>415 &#x20bd;</span>
             <span>/кг</span>
-        </p>
-        <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
-      </article>
-     </section>
+          </p>
+          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+        </article>
+      </section>
+     </div>
      <section class="about-shop">
        <h2 class="visually-hidden">Описание</h2>
        <p class="about-shop__headline">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -303,7 +263,7 @@
         <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">HTML Acdemy</a> &copy; 2019</p>
       </div>
     </footer>
-
+    
       <form class="modal modal-feedback" action="#">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="modal-feedback__headline">Мы обязательно вам ответим!</p>
@@ -316,6 +276,37 @@
         <button type="submit" class="button modal-feedback__button" >Отправить</button>
         <button type="button" class="modal-feedback__close" aria-label="Закрыть"></button>
       </form>
-  
+      <div class="overlay"></div>
+  <script>
+    var feedbackButton = document.querySelector(".contacts__button");
+
+    var modalFeedback = document.querySelector(".modal-feedback");
+    var feedbackClose = document.querySelector(".modal-feedback__close");
+
+    var userName = modalFeedback.querySelector("[name=user-name]");
+
+    var overlay = document.querySelector(".overlay");
+
+    feedbackButton.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalFeedback.classList.add("modal-feedback_show");
+      userName.focus();
+      overlay.classList.add("overlay-show");
+      });
+
+    feedbackClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalFeedback.classList.remove("modal-feedback_show");
+      overlay.classList.remove("overlay-show");
+    })
+
+    overlay.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalFeedback.classList.remove("modal-feedback_show");
+      overlay.classList.remove("overlay-show");
+    })
+
+
+  </script>
   </body>
 </html>
