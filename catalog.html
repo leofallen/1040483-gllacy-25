@@ -112,79 +112,77 @@
         </p>
       </div>
       <h1 class="main-headline">Сливочное мороженое</h1>
-      
-        <form class="filter" action="#">
-          <label>
-            <span class="filter__headline">Сортировка</span><br>
-            <select class="filter__item filter__sort" name="sort">
-             <option value="по популярности">по популярности</option>
-             <option value="сначала недорогие">сначала недорогие</option>
-             <option value="сначала дорогие">сначала дорогие</option>
-             <option value="по жирности">по жирности</option>
-            </select>
-          </label>
-          <label>
-            <span class="filter__headline">Цена: 100 руб. – 500 руб.</span><br>
-            <input class="filter__item filter__price" type="range" min="100" max="500">
-          </label>
-          <div>
-            <span class="filter__headline">Жирность:</span><br>
-              <div class="filter__item filter__fat">
-                <label class="filter__fat-radio">
-                  <input type="radio" name="fat" class="visually-hidden">
-                  0%
-                  <span class="filter__fat-radio_indicator"></span>
-                </label>
-                <label class="filter__fat-radio">
-                  <input type="radio" name="fat" class="visually-hidden">
-                  до 10%
-                  <span class="filter__fat-radio_indicator"></span>
-                </label>
-                <label class="filter__fat-radio">
-                   <input type="radio" name="fat" class="visually-hidden">
-                   до 30%
-                   <span class="filter__fat-radio_indicator"></span>
-                </label>
-                <label class="filter__fat-radio">
-                  <input type="radio" name="fat" class="visually-hidden">
-                  выше 30%
-                  <span class="filter__fat-radio_indicator"></span>
-                </label>
-              </div>
-          </div>
-          <div>
-            <span class="filter__headline">Наполнители:</span><br>
-            <div class="filter__item filter__filler">
-              <label class="filter__filler-checkbox">
-                <input type="checkbox" class="visually-hidden">
-                шоколадные
-                <span class="filter__filler-checkbox_indicator"></span>
+      <form class="filter" action="#">
+        <label>
+          <span class="filter__headline">Сортировка</span><br>
+          <select class="filter__item filter__sort" name="sort">
+           <option value="по популярности">по популярности</option>
+           <option value="сначала недорогие">сначала недорогие</option>
+           <option value="сначала дорогие">сначала дорогие</option>
+           <option value="по жирности">по жирности</option>
+          </select>
+        </label>
+        <label>
+          <span class="filter__headline">Цена: 100 руб. – 500 руб.</span><br>
+          <input class="filter__item filter__price" type="range" min="100" max="500">
+        </label>
+        <div>
+          <span class="filter__headline">Жирность:</span><br>
+            <div class="filter__item filter__fat">
+              <label class="filter__fat-radio">
+                <input type="radio" name="fat" class="visually-hidden">
+                0%
+                <span class="filter__fat-radio_indicator"></span>
               </label>
-              <label class="filter__filler-checkbox">
-                <input type="checkbox" class="visually-hidden">
-                сахарные присыпки
-                <span class="filter__filler-checkbox_indicator"></span>
+              <label class="filter__fat-radio">
+                <input type="radio" name="fat" class="visually-hidden">
+                до 10%
+                <span class="filter__fat-radio_indicator"></span>
               </label>
-              <label class="filter__filler-checkbox">
-                <input type="checkbox" class="visually-hidden">
-                фрукты
-                <span class="filter__filler-checkbox_indicator"></span>
+              <label class="filter__fat-radio">
+                 <input type="radio" name="fat" class="visually-hidden">
+                 до 30%
+                 <span class="filter__fat-radio_indicator"></span>
               </label>
-              <label class="filter__filler-checkbox">
-                <input type="checkbox" class="visually-hidden">
-                сиропы
-                <span class="filter__filler-checkbox_indicator"></span>
+              <label class="filter__fat-radio">
+                <input type="radio" name="fat" class="visually-hidden">
+                выше 30%
+                <span class="filter__fat-radio_indicator"></span>
               </label>
-              <label class="filter__filler-checkbox">
-                <input type="checkbox" class="visually-hidden">
-                джемы
-                <span class="filter__filler-checkbox_indicator"></span>
-              </label>
-           </div>
-          </div>
-          <button class="filter__item filter__button" type="submit">Применить</button>
-        </form>
-        
+            </div>
+        </div>
+        <div>
+          <span class="filter__headline">Наполнители:</span><br>
+          <div class="filter__item filter__filler">
+            <label class="filter__filler-checkbox">
+              <input type="checkbox" class="visually-hidden">
+              шоколадные
+              <span class="filter__filler-checkbox_indicator"></span>
+            </label>
+            <label class="filter__filler-checkbox">
+              <input type="checkbox" class="visually-hidden">
+              сахарные присыпки
+              <span class="filter__filler-checkbox_indicator"></span>
+            </label>
+            <label class="filter__filler-checkbox">
+              <input type="checkbox" class="visually-hidden">
+              фрукты
+              <span class="filter__filler-checkbox_indicator"></span>
+            </label>
+            <label class="filter__filler-checkbox">
+              <input type="checkbox" class="visually-hidden">
+              сиропы
+              <span class="filter__filler-checkbox_indicator"></span>
+            </label>
+            <label class="filter__filler-checkbox">
+              <input type="checkbox" class="visually-hidden">
+              джемы
+              <span class="filter__filler-checkbox_indicator"></span>
+            </label>
+         </div>
+        </div>
+        <button class="filter__item filter__button" type="submit">Применить</button>
+      </form>
       <div class="gallery-container">
         <section class="catalog-gallery">
           <h2 class="visually-hidden">Каталог мороженого</h2>
@@ -294,7 +292,6 @@
         <li class="pagination-list__item"><a class="pink-hover" href="#">5</a></li>
       </ul>  
     </main>
-
     <footer class="main-footer">
       <ul class="social">
         <li>
@@ -329,4 +326,4 @@
         <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">HTML Acdemy</a> &copy; 2019</p>
       </div>
     </footer>
-  </body>
+  </body> 
