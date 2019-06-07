@@ -826,6 +826,16 @@ main {
   left: 3.2px;
 }
 
+.filter__fat-radio input[type="radio"]:checked + .filter__fat-radio_indicator:hover::after {
+  background-color: #fff;
+}
+
+.filter__fat-radio input[type="radio"] + .filter__fat-radio_indicator:hover,
+.filter__fat-radio input[type="radio"] + .filter__fat-radio_indicator:focus {
+  border: 3px solid  #fff;
+  border-radius: 50%;
+}
+
 .filter__filler {
   width: 703px;
   height: 37px;
@@ -869,17 +879,39 @@ main {
   left: 5px;
 }
 
+.filter__filler-checkbox input[type="checkbox"]:checked + .filter__filler-checkbox_indicator:hover::before,
+.filter__filler-checkbox input[type="checkbox"]:checked + .filter__filler-checkbox_indicator:hover::after {
+  background-color: #fff;
+}
+
+.filter__filler-checkbox input[type="checkbox"] + .filter__filler-checkbox_indicator:hover {
+  border: 1.5px solid #fff;
+  border-radius: 3px;
+}
+
 .filter__button {
   width: 144px;
   height: 37px;
   border: solid 2px #ffffff;
   margin-top: 22px;
+  box-sizing: border-box;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  background-color: #fff;
+  color: #323232;
+}
+
+.filter__button:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+  border: none;
 }
 
 .filter__sort:hover,
 .filter__sort:focus {
   color: #323232;
-  background-color: #ffffff;
   border: none;
 }
 
@@ -972,10 +1004,9 @@ main {
   background-color: #fff;
 }
 
-
-/* .slide-radio {
-  display: none;
-} */
+.slide-radio_indicator:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
 /* кнопки, меню пользователя*/
 
@@ -1323,6 +1354,28 @@ main {
   z-index: 2;
 }
 
+@keyframes feedbackeror {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 @keyframes overlay-show {
   0% {
     opacity: 0;
@@ -1345,6 +1398,10 @@ main {
 .modal-feedback_show {
   display: flex;
   animation: feedback  0.4s;
+}
+
+.feedback-eror {
+  animation: feedbackeror 0.6s;
 }
 
 .user-nav__item:hover> .modal {
@@ -1428,6 +1485,15 @@ input:hover {
 .social__vk:focus::before {
   opacity: 1;
 }
+
+.social__twitter:active::before,
+.social__instagram:active::before,
+.social__facebook:active::before,
+.social__vk:active::before {
+  border-color: rgba(255, 255, 255);
+  opacity: 0.8;
+}
+
 
 .gen-info {
   position: relative;

@@ -283,9 +283,11 @@
     var modalFeedback = document.querySelector(".modal-feedback");
     var feedbackClose = document.querySelector(".modal-feedback__close");
 
-    var userName = modalFeedback.querySelector("[name=user-name]");
-
     var overlay = document.querySelector(".overlay");
+
+    var userName = modalFeedback.querySelector("[name=user-name]");
+    var userMail = modalFeedback.querySelector("[name=user-email]");
+    var userComment = modalFeedback.querySelector("[name=comment]");
 
     feedbackButton.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -298,13 +300,33 @@
       evt.preventDefault();
       modalFeedback.classList.remove("modal-feedback_show");
       overlay.classList.remove("overlay-show");
-    })
+      modalFeedback.classList.remove("feedback-eror")
+    });
 
     overlay.addEventListener("click", function (evt) {
       evt.preventDefault();
       modalFeedback.classList.remove("modal-feedback_show");
       overlay.classList.remove("overlay-show");
-    })
+    });
+
+    // неполучатеся заставить окно дергаться в случае незаполнения инпутов
+
+    // modalFeedback.addEventListener("submit", function (evt) {
+    //   if (!userName.value || !userMail.value || !userComment.value) {
+    //   evt.preventDefault();
+    //   modalFeedback.classList.add("feedback-eror");
+    // }
+    // });
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modalFeedback.classList.contains("modal-feedback_show")) {
+        modalFeedback.classList.remove("modal-feedback_show");
+        overlay.classList.remove("overlay-show");
+      }
+    }
+  });
 
 
   </script>
