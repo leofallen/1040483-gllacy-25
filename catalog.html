@@ -12,7 +12,7 @@
   
     <header class="main-header">
       <div class="main-header__container">
-        <a href="index.html"><img class="main-header__logo" src="img/gllacy-logo.svg" alt="логотип Глейси"></a>
+        <a href="index.html"><img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси"></a>
         <nav class="main-nav">
           <ul class="site-nav">
             <li class="site-nav__catalog_mod">Каталог</li>
@@ -52,10 +52,10 @@
                   <table class="basket__table">
                     <tr class="basket__row">
                       <td>
-                        <img src="img/Х.svg"  width="10" alt="close">
+                        <img src="img/Х.svg"  width="10" height="10" alt="close">
                       </td>
                       <td class="basket__item-image">
-                        <img src="./img/ice-cream1.png" width="30" alt="">
+                        <img src="./img/ice-cream1.png" width="30" height="30" alt="">
                       </td>
                       <td class="basket__item-info">
                         Пломбир с апельсиновым джемом
@@ -70,10 +70,10 @@
                     </tr>
                     <tr class="basket__row">
                       <td>
-                          <img src="img/Х.svg"  width="10" alt="close">
+                          <img src="img/Х.svg"  width="10" height="10" alt="close">
                       </td>
                       <td class="basket__item-image">
-                        <img src="./img/ice-cream3.png" width="30" alt="">
+                        <img src="./img/ice-cream3.png" width="30" height="30" alt="">
                       </td>
                       <td class="basket__item-info">
                         Клубничный пломбир с присыпкой из белого шиколада
@@ -115,8 +115,8 @@
       
         <form class="filter" action="#">
           <label>
-            Сортировка<br>
-            <select class="filter__item filter__sort" name="sort" id="">
+            <span class="filter__headline">Сортировка</span><br>
+            <select class="filter__item filter__sort" name="sort">
              <option value="по популярности">по популярности</option>
              <option value="сначала недорогие">сначала недорогие</option>
              <option value="сначала дорогие">сначала дорогие</option>
@@ -124,12 +124,12 @@
             </select>
           </label>
           <label>
-            Цена: 100 руб. – 500 руб.<br>
+            <span class="filter__headline">Цена: 100 руб. – 500 руб.</span><br>
             <input class="filter__item filter__price" type="range" min="100" max="500">
           </label>
-          <label>
-            Жирность:<br>
-              <div class="filter__item filter__fat" action="#">
+          <div>
+            <span class="filter__headline">Жирность:</span><br>
+              <div class="filter__item filter__fat">
                 <label class="filter__fat-radio">
                   <input type="radio" name="fat" class="visually-hidden">
                   0%
@@ -151,10 +151,10 @@
                   <span class="filter__fat-radio_indicator"></span>
                 </label>
               </div>
-          </label>
-          <label>
-            Наполнители:<br>
-            <div class="filter__item filter__filler" action="#">
+          </div>
+          <div>
+            <span class="filter__headline">Наполнители:</span><br>
+            <div class="filter__item filter__filler">
               <label class="filter__filler-checkbox">
                 <input type="checkbox" class="visually-hidden">
                 шоколадные
@@ -180,17 +180,18 @@
                 джемы
                 <span class="filter__filler-checkbox_indicator"></span>
               </label>
+           </div>
           </div>
-          </label>
           <button class="filter__item filter__button" type="submit">Применить</button>
         </form>
+        
       <div class="gallery-container">
         <section class="catalog-gallery">
           <h2 class="visually-hidden">Каталог мороженого</h2>
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream1.png" alt="мороженое">
+                <img src="./img/ice-cream1.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -202,7 +203,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream2.png" alt="мороженое">
+                <img src="./img/ice-cream2.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочно-кофейное с кусочками шоколада</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -214,7 +215,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream3.png" alt="мороженое">
+                <img src="./img/ice-cream3.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -226,7 +227,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream4.png" alt="мороженое">
+                <img src="./img/ice-cream4.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочное крем-брюле с карамельной подливкой</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -238,7 +239,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream5.png" alt="мороженое">
+                <img src="./img/ice-cream5.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочное с брусничным джемом</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -250,7 +251,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream6.png" alt="мороженое">
+                <img src="./img/ice-cream6.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочно-черничное с цельными ягодами черники</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -262,7 +263,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream7.png" alt="мороженое">
+                <img src="./img/ice-cream7.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочно-черничное с цельными ягодами черники</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -274,7 +275,7 @@
           <article class="catalog-gallery__item">
             <div class="catalog-gallery__item_hover"></div>
             <figure >
-                <img src="./img/ice-cream8.png" alt="мороженое">
+                <img src="./img/ice-cream8.png" width="267" height="267" alt="мороженое">
                 <figcaption><h3>Сливочно-черничное с цельными ягодами черники</h3></figcaption>
             </figure>
             <p class="price-tag">
@@ -324,7 +325,7 @@
         <li><a class="pink-hover" href="#">Экологические стандарты</a></li>
        </ul>
        <div class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__html-academy-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__html-academy-logo" src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML academy"></a>
         <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">HTML Acdemy</a> &copy; 2019</p>
       </div>
     </footer>

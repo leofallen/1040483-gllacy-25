@@ -65,12 +65,14 @@ body > * > * > * {
   list-style: none;
 }
 
-.site-nav__border {
+.sub-menu__border::after {
+  content: "";
+  display: block;
   position: absolute;
   width: 128px;
   height: 1px;
   background-color: #32323227;
-  top: 35px;
+  top: 25px;
   left: 6px;
 }
 
@@ -777,9 +779,16 @@ main {
   line-height: 18px;
   color: #ffffff;
   border-radius: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
+}
+
+.filter__headline {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  padding-left: 17px;
 }
 
 .filter__sort {
