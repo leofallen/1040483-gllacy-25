@@ -126,6 +126,7 @@ a {
 .site-nav,
 .user-nav {
   list-style: none;
+  font-size: 14px;
 }
 
 
@@ -293,7 +294,7 @@ a {
 .mailing {
   width: 560px;
   min-height: 220px;
-  font-weight: 500;
+  font-weight: 400;
   padding:35px 25px 0 25px;
   box-sizing: border-box;
   color: #5a5a5a;
@@ -314,9 +315,9 @@ a {
   margin: 0;
   margin-right: 10px;
   padding: 15px;
-  box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
+  box-sizing: border-box;
 }
 
 .button {
@@ -329,8 +330,6 @@ a {
 .button:hover,
 .button:focus {
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-    background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
-    background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
     background-image: linear-gradient( 90deg, rgb(235, 98, 80) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0 #ac1000;
 }
@@ -380,7 +379,7 @@ a {
 
 .copyright {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 400;
 }
 
@@ -416,12 +415,14 @@ a {
   background-image: url("../img/promo-1.jpg");
   background-position: top -95px left -50px;
   border-radius: 15px;
+  background-color: rgb(165, 47, 47);
 }
 
 .promo-block-2 {
   background-image: url("../img/promo-2.jpg");
   background-position: top -105px right -52px;
   border-radius: 15px;
+  background-color: rgb(51, 13, 13);
 }
 
 .promo__button {
@@ -447,6 +448,8 @@ a {
 
 
 .working-info {
+  display: flex;
+  flex-direction: column;
   text-align: right;
   margin: 0;
  
@@ -688,6 +691,7 @@ main {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(247, 242, 242);
 }
 
 
@@ -741,7 +745,11 @@ main {
 }
 
 .main-headline {
-  margin-right  : auto;
+  
+  font-size: 35px;
+  line-height: 41px;
+  margin-right: auto;
+  margin-top: 0;
 }
 
 .breadcrumbs {
@@ -750,6 +758,7 @@ main {
   width: 220px;
   margin: 0;
   padding: 0;
+  margin-bottom: 12px;
 }
 
 .breadcrumbs li {
@@ -1520,6 +1529,10 @@ input:hover {
  margin-bottom: 5px;
 }
 
+.gen-info li:first-child {
+  font-weight: bold;
+}
+
 .gen-info li:first-child::before {
   content: "";
   position: absolute;
@@ -1535,4 +1548,5 @@ input:hover {
 .copyright a:last-child {
   border-bottom: 0.5px solid #fff;
 }
+
 
