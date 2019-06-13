@@ -110,22 +110,24 @@
         </p>
       </div>
       <h1 class="main-headline">Сливочное мороженое</h1>
-      <form class="filter" action="#">
-        <label>
-          <span class="filter__headline">Сортировка</span><br>
-          <select class="filter__item filter__sort" name="sort">
-           <option value="по популярности">по популярности</option>
-           <option value="сначала недорогие">сначала недорогие</option>
-           <option value="сначала дорогие">сначала дорогие</option>
-           <option value="по жирности">по жирности</option>
-          </select>
-        </label>
-        <label>
-          <span class="filter__headline">Цена: 100 руб. – 500 руб.</span><br>
-          <input class="filter__item filter__price" type="range" min="100" max="500">
-        </label>
-        <div>
-          <span class="filter__headline">Жирность:</span><br>
+      <section class="filters">
+        <h2 class="visually-hidden"></h2>
+        <form class="filter" action="">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select class="filter__item filter__sort" name="sort">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <input class="filter__item filter__price" type="range" min="100" max="500">
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
             <div class="filter__item filter__fat">
               <label class="filter__fat-radio">
                 <input type="radio" name="fat" class="visually-hidden">
@@ -148,39 +150,40 @@
                 <span class="filter__fat-radio_indicator"></span>
               </label>
             </div>
-        </div>
-        <div>
-          <span class="filter__headline">Наполнители:</span><br>
-          <div class="filter__item filter__filler">
-            <label class="filter__filler-checkbox">
-              <input type="checkbox" class="visually-hidden">
-              шоколадные
-              <span class="filter__filler-checkbox_indicator"></span>
-            </label>
-            <label class="filter__filler-checkbox">
-              <input type="checkbox" class="visually-hidden">
-              сахарные присыпки
-              <span class="filter__filler-checkbox_indicator"></span>
-            </label>
-            <label class="filter__filler-checkbox">
-              <input type="checkbox" class="visually-hidden">
-              фрукты
-              <span class="filter__filler-checkbox_indicator"></span>
-            </label>
-            <label class="filter__filler-checkbox">
-              <input type="checkbox" class="visually-hidden">
-              сиропы
-              <span class="filter__filler-checkbox_indicator"></span>
-            </label>
-            <label class="filter__filler-checkbox">
-              <input type="checkbox" class="visually-hidden">
-              джемы
-              <span class="filter__filler-checkbox_indicator"></span>
-            </label>
-         </div>
-        </div>
-        <button class="filter__item filter__button" type="submit">Применить</button>
-      </form>
+          </fieldset>
+          <fieldset>
+              <legend>Наполнители:</legend>
+              <div class="filter__item filter__filler">
+                <label class="filter__filler-checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  шоколадные
+                  <span class="filter__filler-checkbox_indicator"></span>
+                </label>
+                <label class="filter__filler-checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  сахарные присыпки
+                  <span class="filter__filler-checkbox_indicator"></span>
+                </label>
+                <label class="filter__filler-checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  фрукты
+                  <span class="filter__filler-checkbox_indicator"></span>
+                </label>
+                <label class="filter__filler-checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  сиропы
+                  <span class="filter__filler-checkbox_indicator"></span>
+                </label>
+                <label class="filter__filler-checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  джемы
+                  <span class="filter__filler-checkbox_indicator"></span>
+                </label>
+              </div>
+          </fieldset>
+          <input class="filter__item filter__button" type="submit">
+        </form>
+      </section>
       <div class="gallery-container">
         <section class="catalog-gallery">
           <h2 class="visually-hidden">Каталог мороженого</h2>
@@ -192,7 +195,6 @@
             </figure>
             <p class="price-tag">
                 <span>310 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -204,7 +206,6 @@
             </figure>
             <p class="price-tag">
                 <span>380 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -216,7 +217,6 @@
             </figure>
             <p class="price-tag">
                 <span>355 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -228,7 +228,6 @@
             </figure>
             <p class="price-tag">
                 <span>415 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -240,7 +239,6 @@
             </figure>
             <p class="price-tag">
                 <span>325 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -252,7 +250,6 @@
             </figure>
             <p class="price-tag">
                 <span>410 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -264,7 +261,6 @@
             </figure>
             <p class="price-tag">
                 <span>375 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>
@@ -276,7 +272,6 @@
             </figure>
             <p class="price-tag">
                 <span>320 &#x20bd;</span>
-                <span>/кг</span>
             </p>
             <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
           </article>                              

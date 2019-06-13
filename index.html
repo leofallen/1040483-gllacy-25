@@ -8,7 +8,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
     <header class="main-header">
       <div class="main-header__container">
         <img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси">
@@ -60,8 +59,7 @@
         </nav>
       </div>
     </header>
-    
-   <main>
+    <main>
      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
      <section class="slider">
        <h2 class="visually-hidden">Слайдер</h2>
@@ -74,32 +72,40 @@
        <ul class="slides-switches">
           <li>
            <label  class="slide-radio">
-            <input type="radio" name="radio" class="visually-hidden" checked>
+            <input type="radio" name="radio" class="visually-hidden slide_button-1" checked>
               <span class="slide-radio_indicator"></span>
            </label>
           </li>
          <li>
            <label  class="slide-radio">
-            <input type="radio" name="radio" class="visually-hidden">
+            <input type="radio" name="radio" class="visually-hidden slide_button-2">
               <span class="slide-radio_indicator"></span>
            </label>
          </li>
          <li> 
            <label  class="slide-radio">
-            <input type="radio" name="radio" class="visually-hidden">
+            <input type="radio" name="radio" class="visually-hidden slide_button-3">
               <span class="slide-radio_indicator"></span>
            </label>
          </li>
        </ul>
      <div class="slides">
-       <img class="slide-1" src="./img/slide-1.png" width="1045" height="881" alt="слайд-1">
-       <h3 class="slides__headline slide-1">Крем-брюле и пломбир с малиновым джемом</h3>
-       <img class="slide-2" src="./img/slide-2.png" width="1045" height="881" alt="слайд-2">
-       <h3 class="slides__headline slide-2">Шоколадный пломбир и лимонный сорбет </h3>
-       <img class="slide-3" src="./img/slide-3.png" width="1045" height="881" alt="слайд-3">
-       <h3 class="slides__headline slide-3">Пломбир с помадкой и клубничный щербет</h3>
+       <div class="slide-block-1 slide-block">
+        <img src="./img/slide-1.png" width="1045" height="881" alt="слайд-1">
+        <h3 class="slides__headline slide-1">Крем-брюле и пломбир с малиновым джемом</h3>
+        <a class="button slider__button" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide-block-2 slide-block">
+        <img src="./img/slide-2.png" width="1045" height="881" alt="слайд-2">
+        <h3 class="slides__headline slide-2">Шоколадный пломбир и лимонный сорбет </h3>
+        <a class="button slider__button" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide-block-3 slide-block">
+        <img src="./img/slide-3.png" width="1045" height="881" alt="слайд-3">
+        <h3 class="slides__headline slide-3">Пломбир с помадкой и клубничный щербет</h3>
+        <a class="button slider__button" href="#">Давайте оба!</a>
+      </div>
      </div>
-     <a class=" button slider__button" href="#">Давайте оба!</a>
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Акционные предложения</h2>
@@ -125,7 +131,6 @@
           </figure>
           <p class="price-tag">
               <span>310 &#x20bd;</span>
-              <span>/кг</span>
           </p>
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
         </article>
@@ -137,7 +142,6 @@
           </figure>
           <p class="price-tag">
             <span>380 &#x20bd;</span>
-            <span>/кг</span>
           </p>
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
         </article>
@@ -149,7 +153,6 @@
           </figure>
           <p class="price-tag">
             <span>355 &#x20bd;</span>
-            <span>/кг</span>
           </p>
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
         </article>
@@ -161,7 +164,6 @@
           </figure>
           <p class="price-tag">
             <span>415 &#x20bd;</span>
-            <span>/кг</span>
           </p>
           <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
         </article>
@@ -209,6 +211,7 @@
     </main>
     <div class="map-container">
     <section class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e767b12f97158382cbf7f2ad48b99caffc7faa09c73a59343a525575975a63b&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <address class="contacts">
         Адрес главноsго офиса<br>
@@ -275,57 +278,6 @@
         <button type="button" class="modal-feedback__close" aria-label="Закрыть"></button>
       </form>
       <div class="overlay"></div>
-  <script>
-    var feedbackButton = document.querySelector(".contacts__button");
-
-    var modalFeedback = document.querySelector(".modal-feedback");
-    var feedbackClose = document.querySelector(".modal-feedback__close");
-
-    var overlay = document.querySelector(".overlay");
-
-    var userName = modalFeedback.querySelector("[name=user-name]");
-    var userMail = modalFeedback.querySelector("[name=user-email]");
-    var userComment = modalFeedback.querySelector("[name=comment]");
-
-    feedbackButton.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalFeedback.classList.add("modal-feedback_show");
-      userName.focus();
-      overlay.classList.add("overlay-show");
-      });
-
-    feedbackClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalFeedback.classList.remove("modal-feedback_show");
-      overlay.classList.remove("overlay-show");
-      modalFeedback.classList.remove("feedback-eror")
-    });
-
-    overlay.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalFeedback.classList.remove("modal-feedback_show");
-      overlay.classList.remove("overlay-show");
-    });
-
-    // неполучатеся заставить окно дергаться в случае незаполнения инпутов
-
-    // modalFeedback.addEventListener("submit", function (evt) {
-    //   if (!userName.value || !userMail.value || !userComment.value) {
-    //   evt.preventDefault();
-    //   modalFeedback.classList.add("feedback-eror");
-    // }
-    // });
-
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (modalFeedback.classList.contains("modal-feedback_show")) {
-        modalFeedback.classList.remove("modal-feedback_show");
-        overlay.classList.remove("overlay-show");
-      }
-    }
-  });
-  
-  </script>
+      <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
