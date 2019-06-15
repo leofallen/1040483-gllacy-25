@@ -2,8 +2,8 @@ var feedbackButton = document.querySelector(".contacts__button");
 var modalFeedback = document.querySelector(".modal-feedback");
 var feedbackClose = document.querySelector(".modal-feedback__close");
 var overlay = document.querySelector(".overlay");
-var userName = modalFeedback.querySelector("[name=user-name]");
-var userMail = modalFeedback.querySelector("[name=user-email]");
+var userName = modalFeedback.querySelector("#user-name");
+var userMail = modalFeedback.querySelector("#user-email");
 var userComment = modalFeedback.querySelector("[name=comment]");
 var slider = document.querySelector(".slider");
 var slide1 = slider.querySelector(".slide-block-1");
@@ -65,13 +65,15 @@ overlay.addEventListener("click", function (evt) {
   modalFeedback.classList.remove("modal-feedback_show");
   overlay.classList.remove("overlay-show");
 });
-// неполучатеся заставить окно дергаться в случае незаполнения инпутов
-// modalFeedback.addEventListener("submit", function (evt) {
-//   if (!userName.value || !userMail.value || !userComment.value) {
-//   evt.preventDefault();
-//   modalFeedback.classList.add("feedback-eror");
-// }
-// });
+
+
+modalFeedback.addEventListener("submit", function (evt) {
+  if (!userName.value || !userMail.value || !userComment.value) {
+  evt.preventDefault();
+  modalFeedback.classList.add("feedback-eror");
+}
+});
+
 window.addEventListener("keydown", function (evt) {
 if (evt.keyCode === 27) {
   evt.preventDefault();

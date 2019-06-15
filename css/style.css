@@ -64,7 +64,7 @@ body > * > * > * {
   border-radius: 5px;
   box-sizing: border-box;
   text-indent: 15px;
-  top: 30px;
+  top: 37px;
   left: -7px;
 }
 
@@ -143,6 +143,7 @@ a {
 }
 
 .site-nav  .main-header__link {
+  display: block;
   padding: 7px 12px;  
   border-radius: 20px;
 }
@@ -207,9 +208,11 @@ a {
 .about-shop__content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-shop__item {
+  position: relative;
   width: 480px;
   margin-bottom: 0;
 }
@@ -220,11 +223,6 @@ a {
   margin-top: 22px;
 }
 
-.about-shop__item-3,
-.about-shop__item-4 {
-  padding-left: 85px;
-}
-
 .about-shop__item-1::before {
   content: "";
   position: absolute;
@@ -232,8 +230,8 @@ a {
   height: 49px;
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
-  left: 20px;
-  top: 93px;
+  left: 0;
+  top: -13px;
 }
 
 .about-shop__item-2::before {
@@ -243,8 +241,8 @@ a {
   height: 49px;
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
-  left: 20px;
-  top: 181px;
+  left: 0;
+  top: -13px;
 }
 
 .about-shop__item-3::before {
@@ -254,8 +252,8 @@ a {
   height: 49px;
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
-  right: 512px;
-  top: 93px;
+  left: 0;
+  top: -13px;
 }
 
 .about-shop__item-4::before {
@@ -265,8 +263,8 @@ a {
   height: 49px;
   background-image: url("../img/termo.svg");
   background-repeat: no-repeat;
-  right: 512px;
-  top: 181px;
+  left: 0;
+  top: -13px;
 }
 
 .blog {
@@ -496,6 +494,7 @@ a {
   text-align: center;
   margin-bottom: 40px;
   margin-left: 26px;
+  z-index: 1;
 }
 
 .catalog-gallery__item:before {
@@ -549,7 +548,10 @@ a {
   opacity: 0.2;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  z-index: 1;
+  z-index: -1;
+}
+.catalog-gallery__item:hover {
+  z-index: 2;
 }
 
 .catalog-gallery__item:hover .catalog-gallery__button,
@@ -1095,6 +1097,7 @@ main {
 /* кнопки, меню пользователя*/
 
 .search{
+  display: block;
   position: relative;
   width: 33px;
   height: 33px;
@@ -1110,11 +1113,10 @@ main {
   background-position: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  top: -7px;
-  right: 1px
 }
 
-.search:hover::before {
+.search:hover::before,
+.search:focus::before {
   content: "";
   position: absolute;
   width: 33px;
@@ -1124,13 +1126,12 @@ main {
   background-position: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  top: -7px;
-  right: 1px;
   background-color: #f7f6f3;
 }
 
 
 .login-link{
+  display: block;
   position: relative;
   padding: 6px 17px 6px 40px;
   border-radius: 20px;
@@ -1147,17 +1148,13 @@ main {
   left: 15px;
 }
 
-.login-link:hover::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 19px;
+.login-link:hover::before,
+.login-link:focus::before {
   background-image: url("../img/login-hover.svg");
-  background-repeat: no-repeat;
-  left: 15px;
 }
 
 .basket-link {
+  display: block;
   position: relative;
   padding: 7px 17px 7px 40px;
   border-radius: 20px;
@@ -1206,7 +1203,7 @@ main {
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  top: 30px;
+  top: 37px;
   right: 0;
 }
 
@@ -1231,7 +1228,7 @@ main {
   border-radius: 5.1px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  top: 30px;
+  top: 35px;
   right: 0;
   
 }
