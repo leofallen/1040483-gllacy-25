@@ -13,7 +13,16 @@
         <a href="index.html"><img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси"></a>
         <nav class="main-nav">
           <ul class="site-nav">
-            <li class="site-nav__catalog_mod">Каталог</li>
+            <li>
+              <a class="site-nav_current">Каталог</a>
+              <ul class="site-nav__sub-menu">
+                <li class="sub-menu__border">Новинки</li>
+                <li><a class="sub-menu_current" href="catalog.html">Сливочное</a></li>
+                <li><a class="sub-menu-link" href="#">Щербеты</a></li>
+                <li><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
+                <li><a class="sub-menu-link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a class="main-header__link link-border" href="#">Доставка и оплата</a></li>
             <li><a class="main-header__link link-border" href="#">О Компании</a></li>
           </ul>
@@ -181,7 +190,7 @@
                 </label>
               </div>
           </fieldset>
-          <input class="filter__item filter__button" type="submit">
+          <input class="filter__item filter__button" type="submit" value="Отправить">
         </form>
       </section>
       <div class="gallery-container">
@@ -279,10 +288,10 @@
       </div>
       <ul class="pagination-list">
         <li class="pagination-list__item"><a>1</a></li>
-        <li class="pagination-list__item"><a class="pink-hover" href="#">2</a></li>
-        <li class="pagination-list__item"><a class="pink-hover" href="#">3</a></li>
-        <li class="pagination-list__item"><a class="pink-hover" href="#">4</a></li>
-        <li class="pagination-list__item"><a class="pink-hover" href="#">5</a></li>
+        <li class="pagination-list__item"><a href="#">2</a></li>
+        <li class="pagination-list__item"><a href="#">3</a></li>
+        <li class="pagination-list__item"><a href="#">4</a></li>
+        <li class="pagination-list__item"><a href="#">5</a></li>
       </ul>  
     </main>
     <footer class="main-footer">
