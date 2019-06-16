@@ -733,9 +733,7 @@ main {
   height: 430px;
   margin: 0 auto;
   padding: 0;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #849d8f;
   background-color: rgb(247, 242, 242);
 }
 
@@ -909,7 +907,7 @@ main {
 }
 
 .filter__fat-input:checked + .filter__fat-radio_indicator {
-  box-shadow: inset 0 0 0 3.5px rgb(151, 179, 165);
+  box-shadow: inset 0 0 0 3px rgb(151, 179, 165);
   background-color: rgb(234, 240, 237);
 }
 
@@ -939,7 +937,7 @@ main {
   position: absolute;
   width: 17px;
   height: 17px;
-  border: 1.5px solid rgb(234, 240, 237);
+  border: 2px solid rgb(234, 240, 237);
   border-radius: 3px;
   left: 0;
   top: 0;
@@ -974,7 +972,7 @@ main {
 }
 
 .filter__filler-input + .filter__filler-checkbox_indicator:hover {
-  border: 1.5px solid #fff;
+  border-color:  #fff;
   border-radius: 3px;
 }
 
@@ -1325,9 +1323,6 @@ main {
   align-items: baseline;
 }
 
-.basket__item-image {
- 
-}
 
 .basket__price {
   color: #999999;
@@ -1641,4 +1636,3 @@ textarea:focus {
   left: -22px;
   top: 3px;
 }
-
