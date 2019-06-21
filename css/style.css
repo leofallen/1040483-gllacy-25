@@ -165,7 +165,8 @@ a {
 
 .pink-hover:hover,
 .pink-hover:focus {
-  color: #ffbc9e;      
+  color: #ffbc9e;
+  cursor: pointer;      
 }
 
 .red-hover:hover,
@@ -711,6 +712,7 @@ main {
   align-items: center;
   width: 1146px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .map {
@@ -1536,7 +1538,7 @@ textarea:focus {
 .social {
   display: flex;
   flex-wrap: wrap;
-  width: 375px;
+  width: 30%;
   margin: 0;
   margin-top: 34px;
   padding: 0;
@@ -1645,7 +1647,8 @@ textarea:focus {
 }
 
 .gen-info__first-child {
-font-weight: bold;
+  position: relative;
+  font-weight: bold;
 }
 
 .gen-info__first-child:before {
@@ -1656,7 +1659,32 @@ font-weight: bold;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   left: 0;
-  top: 5px;
+  top: 3px;
+}
+
+.gen-info1 {
+  display: flex;
+  width: 44%;
+}
+
+.gen-info1 ul {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-right: 7px;
+}
+
+.gen-info1 li {
+  padding-left: 23px;
+  margin-bottom: 5px;
+}
+
+.gen-info1 a {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .copyright {
