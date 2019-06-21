@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="main-header__container">
-        <a href="index.html"><img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси"></a>
+        <a class="main-header__logo-link" href="index.html"><img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси"></a>
         <nav class="main-nav">
           <ul class="site-nav">
             <li>
@@ -122,12 +122,14 @@
         <form class="filter" action="">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select class="filter__item filter__sort" name="sort">
-              <option value="по популярности">по популярности</option>
-              <option value="сначала недорогие">сначала недорогие</option>
-              <option value="сначала дорогие">сначала дорогие</option>
-              <option value="по жирности">по жирности</option>
-            </select>
+            <div class="filter__item  filter-sort__background">
+              <select class="filter__sort" name="sort">
+                <option value="по популярности">по популярности</option>
+                <option value="сначала недорогие">сначала недорогие</option>
+                <option value="сначала дорогие">сначала дорогие</option>
+                <option value="по жирности">по жирности</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
@@ -295,24 +297,16 @@
     <footer class="main-footer">
       <ul class="social">
         <li>
-          <a class="social__twitter" href="#" aria-label="твиттер">
-          <span class="visually-hidden">Твиттер</span>
-         </a>
+          <a class="social__twitter" href="#" aria-label="твиттер">Твиттер</a>
         </li>
         <li>
-          <a class="social__instagram" href="#">
-          <span class="visually-hidden">Инстаграмм</span>
-         </a>
+          <a class="social__instagram" href="#">Инстаграм</a>
         </li>
         <li>
-          <a class="social__facebook" href="#">
-          <span class="visually-hidden">Фейсбук</span>
-         </a>
+          <a class="social__facebook" href="#">Фейсбук</a>
         </li>
         <li>
-          <a class="social__vk" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-         </a>
+          <a class="social__vk" href="#">ВКонтакте</a>
         </li>
       </ul>
        <ul class="gen-info">
