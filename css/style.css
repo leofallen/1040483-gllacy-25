@@ -1630,7 +1630,7 @@ textarea:focus {
   opacity: 0.8;
 }
 
-
+/* 
 .gen-info {
   display: block;
   width: 560px;
@@ -1644,7 +1644,7 @@ textarea:focus {
 .gen-info td {
   position: relative;
   padding-left: 23px;
-}
+} */
 
 .gen-info__first-child {
   position: relative;
