@@ -14,7 +14,9 @@
         <nav class="main-nav">
           <ul class="site-nav">
             <li>
-              <a class="site-nav__catalog-link main-header__link link-border" href="catalog.html">Каталог</a>
+              <a class="site-nav__catalog-link main-header__link" href="catalog.html">
+                <span class="border-mixin">Каталог</span>
+              </a>
               <ul class="site-nav__sub-menu">
                 <li class="sub-menu__border">Новинки</li>
                 <li><a class="sub-menu-link" href="catalog.html">Сливочное</a></li>
@@ -23,8 +25,16 @@
                 <li><a class="sub-menu-link" href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li><a class="main-header__link link-border" href="#">Доставка и оплата</a></li>
-            <li><a class="main-header__link link-border" href="#">О Компании</a></li>
+            <li>
+              <a class="main-header__link" href="#">
+                <span class="border-mixin">Доставка и оплата</span>
+            </a>
+            </li>
+            <li>
+              <a class="main-header__link" href="#">
+                <span class="border-mixin">О Компании</span>
+            </a>
+            </li>
           </ul>
           <ul class="user-nav">
             <li class="user-nav__serach-form  user-nav__item">
@@ -125,7 +135,9 @@
           <div class="catalog-gallery__item_hover"></div>
           <figure>
             <img src="./img/ice-cream1.png" width="267" height="267" alt="мороженое">
-            <figcaption><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></figcaption>
+            <figcaption>
+              <h3><span class="border-mixin">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
+            </figcaption>
           </figure>
           <p class="price-tag">
               <span>310 &#x20bd;</span>
@@ -136,7 +148,9 @@
           <div class="catalog-gallery__item_hover"></div>
           <figure>
             <img src="./img/ice-cream2.png" width="267" height="267" alt="мороженое">
-            <figcaption><h3>Сливочно-кофейное с кусочками шоколада</h3></figcaption>
+            <figcaption>
+              <h3><span class="border-mixin">Сливочно-кофейное с кусочками шоколада</span></h3>
+            </figcaption>
           </figure>
           <p class="price-tag">
             <span>380 &#x20bd;</span>
@@ -147,7 +161,9 @@
           <div class="catalog-gallery__item_hover"></div>
           <figure >
             <img src="./img/ice-cream3.png" width="267" height="267" alt="мороженое">
-            <figcaption><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></figcaption>
+            <figcaption>
+              <h3><span class="border-mixin">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
+            </figcaption>
           </figure>
           <p class="price-tag">
             <span>355 &#x20bd;</span>
@@ -158,7 +174,9 @@
           <div class="catalog-gallery__item_hover"></div>
           <figure >
             <img src="./img/ice-cream4.png" width="267" height="267" alt="мороженое">
-            <figcaption><h3>Сливочное крем-брюле с карамельной подливкой</h3></figcaption>
+            <figcaption>
+              <h3><span class="border-mixin">Сливочное крем-брюле с карамельной подливкой</span></h3>
+            </figcaption>
           </figure>
           <p class="price-tag">
             <span>415 &#x20bd;</span>
@@ -230,49 +248,59 @@
     <footer class="main-footer">
       <ul class="social">
         <li>
-          <a class="social__twitter" href="#" aria-label="твиттер">Твиттер</a>
+          <a class="social__item social__twitter" href="#" aria-label="твиттер">Твиттер
+            <object data="./img/twitter.svg" type="image/svg+xml" width="35" height="35"></object>
+          </a>
         </li>
         <li>
-          <a class="social__instagram" href="#">Инстаграм</a>
+          <a class="social__item social__instagram" href="#">Инстаграм
+            <object data="./img/insta.svg" type="image/svg+xml" width="35" height="35"></object>
+          </a>
         </li>
         <li>
-          <a class="social__facebook" href="#">Фейсбук</a>
+          <a class="social__item social__facebook" href="#">Фейсбук
+            <object data="./img/facebook.svg" type="image/svg+xml" width="35" height="35"></object>
+          </a>
         </li>
         <li>
-          <a class="social__vk" href="#">ВКонтакте</a>
+          <a class="social__item social__vk" href="#">ВКонтакте
+            <object data="./img/vk.svg" type="image/svg+xml" width="35" height="35"></object>
+          </a>
         </li>
       </ul>
-       <!-- <table class="gen-info">
-        <tr>
-          <td class="gen-info__first-child">
-            <a class="pink-hover" href="#">Для поставщиков</a>
-          </td>
-          <td>
-            <a class="pink-hover" href="#">Наши документы</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a class="pink-hover" href="#">О производстве</a>
-          </td>
-          <td>
-            <a class="pink-hover" href="#">Экологические стандарты</a>
-          </td>
-        </td>
-       </table> -->
-       <div class="gen-info1">
+       <div class="gen-info">
          <ul>
-           <li class="gen-info__first-child"><a class="pink-hover">Для поставщиков</a></li>
-           <li><a class="pink-hover">О производстве</a></li>
+           <li class="gen-info__first-child">
+             <a class="pink-hover">
+               <span class="border-mixin">Для поставщиков</span>
+             </a>
+          </li>
+           <li>
+             <a class="pink-hover">
+               <span class="border-mixin">О производстве</span>
+             </a>
+          </li>
          </ul>
          <ul>
-           <li><a class="pink-hover">Наши документы</a></li>
-           <li><a class="pink-hover">Экологические стандарты</a></li>
+           <li>
+             <a class="pink-hover">
+               <span class="border-mixin">Наши документы</span>
+             </a>
+          </li>
+           <li>
+             <a class="pink-hover">
+               <span class="border-mixin">Экологические стандарты</span>
+             </a>
+          </li>
          </ul>
        </div>
        <div class="copyright">
-        <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__html-academy-logo" width="108" height="37" src="img/logo-htmlacademy.svg" alt="Логотип HTML academy"></a>
-        <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">HTML Acdemy</a> &copy; 2019</p>
+        <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="copyright__html-academy-logo" width="108" height="37" src="img/logo-htmlacademy.svg" alt="Логотип HTML academy">
+        </a>
+        <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="border-mixin">HTML Acdemy</span>
+        </a> &copy; 2019</p>
       </div>
     </footer>
       <form class="modal modal-feedback" action="#">

@@ -41,6 +41,13 @@ body > * > * > * {
 	overflow: hidden;
 }
 
+.border-mixin {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0));
+  background-position: 1% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
 .site-nav li:first-child {
   position: relative;
 }
@@ -195,31 +202,6 @@ a {
 .site-nav li,
 .breadcrumbs li {
   position: relative;
-}
-
-.link-border::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 26px);
-  height: 0.5px;
-  background-color: #f8f7f485;
-  top: 24px;
-  left: 13px;
-}
-
-.breadcrumbs__link-border::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 15px);
-  height: 0.5px;
-  background-color: #ffffff85;
-  top: 15px;
-  left: 0;
-}
-
-.gen-info a,
-.copyright a:last-child {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .about-shop {
@@ -708,8 +690,6 @@ main {
 
 .main-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 1146px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -808,11 +788,21 @@ main {
   margin-right: 0.6em;
 }
 
-.breadcrumbs li:not(:last-child)::after {
+.breadcrumbs li::after {
   content: "»";
   position: absolute;
   right: 0;
+  top: 0;
 }
+
+.breadcrumbs li:last-child::after {
+  content: none;
+}
+
+.breadcrumbs__item:last-child .border-mixin {
+  background-image: none;
+}
+
 /*фильтры*/
 
 
@@ -897,8 +887,11 @@ main {
   top: 11px;
 }
 
-.filter-sort__background:hover::after {
+.filter-sort__background:hover::after,
+.filter-sort__background:hover .filter__sort,
+.filter-sort__background:focus .filter-sort {
   color: #323232;
+  border: none;
 }
 
 .filter__price {
@@ -1016,12 +1009,6 @@ main {
 .filter__button:active {
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
-  border: none;
-}
-
-.filter__sort:hover,
-.filter__sort:focus {
-  color: #323232;
   border: none;
 }
 
@@ -1538,113 +1525,47 @@ textarea:focus {
 .social {
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  flex-basis: 200px;
   margin: 0;
-  margin-top: 34px;
+  margin-top: 32px;
   padding: 0;
 }
 
 .social a {
   display: block;
   font-size: 0;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
 }
 
 .social li {
   position: relative;
-  width: 38px;
-  height: 38px;
-  margin-right: 11px;
+  width: 35px;
+  height: 35px;
+  margin-right: 14px;
   margin-bottom: 10px;
 }
 
-.social__twitter::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social__item {
   opacity: 0.8;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-
 }
 
-.social__instagram::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/insta.svg");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
- 
-}
-
-.social__facebook::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/facebook.svg");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  
-}
-
-.social__vk::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/vk.svg");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  
-}
-
-.social__twitter:hover::before,
-.social__instagram:hover::before,
-.social__facebook:hover::before,
-.social__vk:hover::before,
-.social__twitter:focus::before,
-.social__instagram:focus::before,
-.social__facebook:focus::before,
-.social__vk:focus::before {
+.social__item:hover,
+.social__item:focus {
   opacity: 1;
 }
 
-.social__twitter:active::before,
-.social__instagram:active::before,
-.social__facebook:active::before,
-.social__vk:active::before {
+.social__item:active {
   border-color: rgba(255, 255, 255);
   opacity: 0.8;
 }
-
-/* 
-.gen-info {
-  display: block;
-  width: 560px;
-  font-size: 13px;
-  line-height: 18px;
-  margin-top: 22px;
-  border-spacing: 8px 3px;
-}
-
-
-.gen-info td {
-  position: relative;
-  padding-left: 23px;
-} */
 
 .gen-info__first-child {
   position: relative;
@@ -1658,16 +1579,17 @@ textarea:focus {
   height: 13px;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  left: 0;
-  top: 3px;
+  left: -22px;
+  top: 2px;
 }
 
-.gen-info1 {
+.gen-info {
   display: flex;
-  width: 44%;
+  margin: 0 auto;
+  margin-top: 3px;
 }
 
-.gen-info1 ul {
+.gen-info ul {
   list-style: none;
   font-size: 13px;
   line-height: 18px;
@@ -1675,23 +1597,24 @@ textarea:focus {
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  margin-right: 7px;
 }
 
-.gen-info1 li {
-  padding-left: 23px;
-  margin-bottom: 5px;
+.gen-info ul:first-child {
+  margin-left: 23px;
+  margin-right: 30px;
 }
 
-.gen-info1 a {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+.gen-info li {
+  margin-bottom: 4px;
 }
 
 .copyright {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 17px;
+  margin-left: 35px;
+  margin-right: 5px;
 }
 
 .copyright__logo-link {
@@ -1709,41 +1632,3 @@ textarea:focus {
   margin: 0;
   margin-top: 5px;
 }
-
-
-.mailing-test {
-  position: relative;
-  width: 560px;
-  min-height: 220px;
-  font-weight: 400;
-  padding: 33px 21px;
-  color: #5a5a5a;
-  background-color: #f8f7f4;
-  border-radius: 15px;
-  box-sizing: border-box;
-  border: 6px solid transparent;
-  border: 6px solid #323232;
-  border-image-source: url("../img/mailing-border.jpg");
-  border-image-slice: 7;
-  border-image-repeat: round;
-}
-
-  .mailing-test p {
-    width: 510px;
-    margin: 0;
-    margin-bottom: 35px;
-  }
-
-  .mailing__form-test input {
-    font-size: 16px;
-    line-height: 24px;
-    width: 365px;
-    height: 44px;
-    margin: 0;
-    margin-right: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid rgba(178, 178, 178, 0.52);
-    box-sizing: border-box;
-    
-  }
