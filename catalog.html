@@ -59,11 +59,11 @@
                 <input type="email" name="login" id="user-login"  placeholder="Электронная почта" required>
                 <label class="visually-hidden" for="user-passwod">Пароль</label> 
                 <input type="password" id="user-passwod"  placeholder="Пароль" required>
-                <div class="modal-loggin__container">
+                <div class="modal-login__container">
                 <button type="submit" class="button login__button">Войти</button>
                 <p>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                  <a class="red-hover" href="#">Забыли пароль?</a>
+                  <a class="red-hover" href="#">Новая регистрация</a>
                 </p>
                 </div>
               </form>
@@ -161,7 +161,13 @@
           </fieldset>
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <input class="filter__item filter__price" type="range" min="100" max="500">
+            <div class="filter__item  filter-price__container">
+              <input class="filter-price" type="range" min="100" max="500">
+              <div class="filter-price__range"></div>
+              <div class="filter-price__range_selected"></div>
+              <div class="filter-price__min"></div>
+              <div class="filter-price__max"></div>
+            </div>  
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
@@ -218,7 +224,7 @@
                 </label>
               </div>
           </fieldset>
-          <input class="filter__item filter__button" type="submit" value="Применить">
+          <button class="filter__item filter__button" type="submit">Применить</button>
         </form>
       </section>
       <div class="gallery-container">

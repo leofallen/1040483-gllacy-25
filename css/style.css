@@ -467,6 +467,7 @@ a {
   margin: 0;
   top: 100%;
   right: 0;
+  z-index: 1;
 }
 
 .working-info span:nth-of-type(1) {
@@ -877,13 +878,14 @@ main {
 
 
 .filters {
-  display: flex;
-  width: 885px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .filters fieldset {
@@ -908,6 +910,7 @@ main {
   color: #ffffff;
   border-radius: 20px;
   margin-bottom: 15px;
+  padding: 10px 15px;
   background-color: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   border: none;
@@ -944,7 +947,7 @@ main {
 .filter-sort__background {
   position: relative;
   width: 194px;
-  
+  padding: 0;
 }
 
 .filter-sort__background::after {
@@ -965,22 +968,74 @@ main {
   color: #323232;
   border: none;
 }
-
-.filter__price {
+.filter-price__container {
+  position: relative;
   width: 220px;
   height: 37px;
+  text-align: center;
 }
 
-.filter__fat {
-  width: 415px;
+
+.filter-price {
+  width: 176px;
   height: 37px;
-  padding: 10px 15px;
+  opacity: 0;
+}
+
+.filter-price__range {
+  position: absolute;
+  width: 176px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 17px;
+  left: 20px;
+}
+
+.filter-price__range_selected {
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #fff;
+  top: 17px;
+  left: 50px;
+}
+
+
+.filter-price__min {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(194, 194, 194);
+  box-shadow: inset 0 0 0 8px #ffffff;
+  border-radius: 50%;
+  top: 8px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.filter-price__max {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(194, 194, 194);
+  box-shadow: inset 0 0 0 8px #ffffff;
+  border-radius: 50%;
+  top: 8px;
+  right: 60px;
+  cursor: pointer;
+}
+
+.filter-price__min:hover,
+.filter-price__max:hover {
+  transform: scale(1.1); 
 }
 
 .filter__fat-radio {
   position: relative;
   padding-left: 30px;
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 .filter__fat-input + .filter__fat-radio_indicator {
@@ -1064,12 +1119,11 @@ main {
 }
 
 .filter__button {
-  width: 144px;
-  height: 37px;
-  border: solid 2px #ffffff;
-  margin-right: auto;
-  margin-top: 20px;
-  box-sizing: border-box;
+    padding: 8px 30px;
+    border: solid 2px #ffffff;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: auto;
 }
 
 .filter__button:hover,
@@ -1313,7 +1367,6 @@ main {
   background-color: #f8f7f4;
   top: 36px;
   right: 0;
-  
 }
 
 .modal-login input {
@@ -1340,7 +1393,7 @@ main {
   border: none;
 }
 
-.modal-loggin__container {
+.modal-login__container {
   display: flex;
 }
 
