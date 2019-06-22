@@ -606,7 +606,7 @@ a {
   font-weight: 500;
   width: 190px;
   justify-content: space-between;
-  margin: 60px 0 30px auto;
+  margin: 43px 0 30px auto;
   padding: 0;
 }
 
@@ -619,11 +619,73 @@ a {
   align-items: center;
 }
 
-.pagination-list__item a[href]:hover {
+.pagination-list__back {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 26px;
+}
+
+.pagination-list__back::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 0;
+}
+
+.pagination-list__back::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 16px;
+  left: 0rem;
+}
+
+.pagination-list__forward {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 26px;
+}
+
+.pagination-list__forward::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 10px;
+  right: 0;
+}
+
+.pagination-list__forward::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  top: 16px;
+  right: 0;
+}
+.pagination-list_edge {
+  opacity: 0.8;
+}
+
+.pagination-list__item a:hover {
   background-color: rgba(255, 255, 255, 0.2)
 }
 
-.pagination-list__item a:not([href]) {
+.pagination-list__item:nth-child(2) a,
+.pagination-list__item a:active {
   background-color: #fff;
   color: #323232;
 }
@@ -766,11 +828,11 @@ main {
 }
 
 .main-headline {
-  
   font-size: 35px;
   line-height: 41px;
   margin-right: auto;
-  margin-top: 0;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .breadcrumbs {
@@ -778,9 +840,8 @@ main {
   flex-wrap: wrap;
   width: 80%;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 20px;
   padding: 0;
-  margin-bottom: 12px;
 }
 
 .breadcrumbs li {
@@ -815,12 +876,14 @@ main {
 /*фильтры*/
 
 
-.filter {
+.filters {
   display: flex;
   width: 885px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .filters fieldset {
@@ -1005,7 +1068,7 @@ main {
   height: 37px;
   border: solid 2px #ffffff;
   margin-right: auto;
-  margin-top: 27px;
+  margin-top: 20px;
   box-sizing: border-box;
 }
 
