@@ -16,7 +16,7 @@
             <li>
               <a class="site-nav_current">Каталог</a>
               <ul class="site-nav__sub-menu">
-                <li class="sub-menu__border">Новинки</li>
+                <li class="site-nav__sub-menu_border">Новинки</li>
                 <li>
                   <a class="sub-menu_current" href="catalog.html">Сливочное</a>
                 </li>
@@ -146,11 +146,11 @@
         </ul>
       <h1 class="main-headline">Сливочное мороженое</h1>
       <section class="filters">
-        <h2 class="visually-hidden"></h2>
-        <form class="filter" action="">
+        <h2 class="visually-hidden">Фильтры товара</h2>
+        <form class="filter" action="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <div class="filter__item  filter-sort__background">
+            <div class="filter__item  filter-sort-background">
               <select class="filter__sort" name="sort">
                 <option value="по популярности">по популярности</option>
                 <option value="сначала недорогие">сначала недорогие</option>
@@ -161,12 +161,12 @@
           </fieldset>
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <div class="filter__item  filter-price__container">
+            <div class="filter__item  filter-price-container">
               <input class="filter-price" type="range" min="100" max="500">
-              <div class="filter-price__range"></div>
-              <div class="filter-price__range_selected"></div>
-              <div class="filter-price__min"></div>
-              <div class="filter-price__max"></div>
+              <div class="filter-price-range"></div>
+              <div class="filter-price-range_selected"></div>
+              <div class="filter-price-min"></div>
+              <div class="filter-price-max"></div>
             </div>  
           </fieldset>
           <fieldset>

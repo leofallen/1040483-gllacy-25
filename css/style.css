@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-
   background-color: #849d8f;
 }
 
@@ -18,17 +16,6 @@ body {
 .body-background-3 {
   background-color: #9d8b84;
 }
-
-
-/*body > * {
-  background-color:rgba(255, 0, 0, 0.3);
-}
-body > * > * {
-  background-color:rgba(255, 255, 0, 0.3);
-}
-body > * > * > * {
-  background-color:rgba(0, 17, 255, 0.3);
-}*/
 
 .visually-hidden {
 	position: absolute !important;
@@ -56,7 +43,6 @@ body > * > * > * {
   box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
-
 .site-nav__sub-menu {
   display: none;
   position: absolute;
@@ -80,7 +66,7 @@ body > * > * > * {
   list-style: none;
 }
 
-.sub-menu__border::after {
+.site-nav__sub-menu_border::after {
   content: "";
   display: block;
   position: absolute;
@@ -165,7 +151,8 @@ a {
   text-align: center;
   background-color: #d07058;
 }
- .site-nav .sub-menu_current {
+
+.site-nav .sub-menu_current {
   background-color: #d07058;
   color: #fff;
 }
@@ -189,7 +176,6 @@ a {
   padding: 7px 13px;  
   border-radius: 20px;
 }
-
 
 .main-header__link:hover,
 .main-header__link:focus {
@@ -385,7 +371,6 @@ a {
   border :none;
 }
 
-
 .contacts__button {
   font-size: 18px;
   line-height: 24px;
@@ -407,7 +392,6 @@ a {
 .pagination-list {
   list-style: none;
 }
-
 
 /* промо блоки */
 
@@ -528,7 +512,7 @@ a {
   font-weight: 500;
 }
 
-.catalog-gallery__item figure{
+.catalog-gallery__item figure {
   margin: 0;
 }
 
@@ -557,6 +541,7 @@ a {
   background-color: #f8f7f4;
   z-index: -1;
 }
+
 .catalog-gallery__item:hover {
   z-index: 2;
 }
@@ -574,7 +559,6 @@ a {
   left: 0;
   margin: 0;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-
 }
 
 .price-tag:after {
@@ -582,9 +566,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   font-weight: bold;
-  
 }
-
 
 .price-tag span:nth-of-type(1) {
   font-size: 45px;
@@ -677,6 +659,7 @@ a {
   top: 16px;
   right: 0;
 }
+
 .pagination-list_edge {
   opacity: 0.8;
 }
@@ -691,9 +674,6 @@ a {
   color: #323232;
 }
 
-
-
-
 /*сетка*/
 
 .main-header {
@@ -707,7 +687,6 @@ a {
   min-width: 1146px;
   padding: 10px 0 0 0;
   box-sizing: border-box;
-  
 }
 
 .main-nav {
@@ -720,7 +699,6 @@ a {
   margin-left: auto;
 }
 
-
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -730,13 +708,9 @@ a {
   margin-left: 10px;
 }
 
-
-
-
 .user-nav> li {
   margin-left: 10px;
 }
-
 
 main {
   display: flex;
@@ -756,6 +730,7 @@ main {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 .catalog-main {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
@@ -777,7 +752,6 @@ main {
   background-color: #849d8f;
   background-color: rgb(247, 242, 242);
 }
-
 
 .contacts {
   position: absolute;
@@ -876,7 +850,6 @@ main {
 
 /*фильтры*/
 
-
 .filters {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -885,7 +858,6 @@ main {
 .filter {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .filters fieldset {
@@ -895,6 +867,7 @@ main {
   margin-right: 14px;
   vertical-align: middle;
 }
+
 .filters legend {
   font-size: 14px;
   line-height: 16px;
@@ -916,7 +889,6 @@ main {
   border: none;
 }
 
- 
 .filter__item {
   font-size: 16px;
   font-weight: 500;
@@ -944,13 +916,13 @@ main {
   outline: 0;
 }
 
-.filter-sort__background {
+.filter-sort-background {
   position: relative;
   width: 194px;
   padding: 0;
 }
 
-.filter-sort__background::after {
+.filter-sort-background::after {
   content: "▼";
   position: absolute;
   width: 25px;
@@ -962,19 +934,19 @@ main {
   top: 11px;
 }
 
-.filter-sort__background:hover::after,
-.filter-sort__background:hover .filter__sort,
-.filter-sort__background:focus .filter-sort {
+.filter-sort-background:hover::after,
+.filter-sort-background:hover .filter__sort,
+.filter-sort-background:focus .filter-sort {
   color: #323232;
   border: none;
 }
-.filter-price__container {
+
+.filter-price-container {
   position: relative;
   width: 220px;
   height: 37px;
   text-align: center;
 }
-
 
 .filter-price {
   width: 176px;
@@ -982,7 +954,7 @@ main {
   opacity: 0;
 }
 
-.filter-price__range {
+.filter-price-range {
   position: absolute;
   width: 176px;
   height: 4px;
@@ -991,7 +963,7 @@ main {
   left: 20px;
 }
 
-.filter-price__range_selected {
+.filter-price-range_selected {
   position: absolute;
   width: 100px;
   height: 4px;
@@ -1000,8 +972,7 @@ main {
   left: 50px;
 }
 
-
-.filter-price__min {
+.filter-price-min {
   position: absolute;
   display: block;
   width: 20px;
@@ -1014,7 +985,7 @@ main {
   cursor: pointer;
 }
 
-.filter-price__max {
+.filter-price-max {
   position: absolute;
   display: block;
   width: 20px;
@@ -1027,8 +998,8 @@ main {
   cursor: pointer;
 }
 
-.filter-price__min:hover,
-.filter-price__max:hover {
+.filter-price-min:hover,
+.filter-price-max:hover {
   transform: scale(1.1); 
 }
 
@@ -1119,11 +1090,11 @@ main {
 }
 
 .filter__button {
-    padding: 8px 30px;
-    border: solid 2px #ffffff;
-    margin: 0;
-    margin-bottom: 15px;
-    margin-top: auto;
+  padding: 8px 30px;
+  border: solid 2px #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: auto;
 }
 
 .filter__button:hover,
@@ -1169,7 +1140,7 @@ main {
   left: 383px;
 } 
 
-.slides__headline {
+.slide-block__headline {
   font-size: 60px;
   line-height: 60px;
   width: 670px;
@@ -1265,7 +1236,6 @@ main {
   border-radius: 50%;
   background-color: #f7f6f3;
 }
-
 
 .login-link{
   display: block;
@@ -1631,8 +1601,6 @@ input::placeholder {
   color: #999999;
 }
 
-
-
 input:hover,
 textarea:hover {
   box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
@@ -1642,7 +1610,6 @@ input:focus,
 textarea:focus {
   outline: 0;
   box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
-  /* border: transparent; */
 }
 
 /* футер */
@@ -1751,7 +1718,6 @@ textarea:focus {
 .copyright__html-academy-logo {
   width: 108px;
 }
-
 
 .copyright p {
   margin: 0;
