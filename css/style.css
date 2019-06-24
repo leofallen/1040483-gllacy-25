@@ -912,25 +912,16 @@ main {
   border: none;
   color: #fff;
   outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+	appearance: none !important;
 }
 
 .filter-sort-background {
   position: relative;
   width: 194px;
   padding: 0;
-}
-
-.filter-sort-background::before {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 37px;
-  padding: 7px;
-  background-color: rgb(157, 176, 165);
-  border-radius: 0 17px 17px 0;
-  right: -4px;
-  top: 0px;
-  box-sizing: border-box;
 }
 
 .filter-sort-background::after {
