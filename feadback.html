@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Обратная связь</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси">
+      </a>
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li>
+            <a class="site-nav__catalog-link main-header__link">Каталог</a>
+            <ul class="site-nav__sub-menu">
+              <li class="site-nav__sub-menu_border">Новинки</li>
+              <li>
+                <a class="sub-menu-link" href="catalog.html">Сливочное</a>
+              </li>
+              <li>
+                <a class="sub-menu-link" href="#">Щербеты</a>
+              </li>
+              <li>
+                <a class="sub-menu-link" href="#">Фруктовый лед</a>
+              </li>
+              <li>
+                <a class="sub-menu-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="main-header__link link-border" href="#">
+              <span class="border-mixin">Доставка и оплата</span>
+            </a>
+          </li>
+          <li>
+            <a class="main-header__link link-border" href="#">
+              <span class="border-mixin">О Компании</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav__serach-form  user-nav__item">
+            <a class="search" href="search.html"></a>
+            <form class="modal modal-search" action="#" >
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <label class="visually-hidden" for="user-search">Поиск</label>  
+              <input type="search" id="user-search" name="search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li class="login  user-nav__item">
+            <a class="login-link main-header__link" href="login.html">Вход</a>
+            <form class="modal modal-login" action="#">
+              <h2 class="visually-hidden">Форма авторизации</h2>
+              <label class="visually-hidden" for="user-login">Логин</label>  
+              <input type="email" name="login" id="user-login"  placeholder="Электронная почта" required>
+              <label class="visually-hidden" for="user-passwod">Пароль</label> 
+              <input type="password" id="user-passwod"  placeholder="Пароль" required>
+              <div class="modal-login__container">
+              <button type="submit" class="button login__button">Войти</button>
+              <p>
+                <a class="red-hover" href="#">Забыли пароль?</a>
+                <a class="red-hover" href="#">Новая регистрация</a>
+              </p>
+              </div>
+            </form>
+          </li>
+          <li class="basket" >
+            <a class="basket-link main-header__link" href="basket.html">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="working-info">
+      <span>С 10 до 20, ежедневно</span>
+      <span>
+        <a class="pink-hover" href="tel:+788124502525">8 812 450-25-25</a>
+      </span>
+    </p>
+  </header>
+  <main>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="pink-hover" href="index.html">
+          <span class="border-mixin">Главная</span>
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a>
+          <span class="border-mixin">Обратная связь</span>
+        </a>
+      </li>
+    </ul>
+    <div class="modal-feadback-container">
+      <form class="modal-feedback modal-feadback_link" action="#">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="modal-feedback__headline">Мы обязательно вам ответим!</p>
+        <label class="visually-hidden" for="user-name">Имя</label>
+        <input type="text" name="user-name" id="user-name" aria-label="Поле ввода имени" placeholder="Как вас зовут?">
+        <label class="visually-hidden" for="user-email">Электронная почта</label>
+        <input type="email" name="user-email" id="user-email"  aria-label="Поле ввода электронной почты" placeholder="Ваша почта для ответа" >
+        <label class="visually-hidden" for="user-comment">Комментарий</label>
+        <textarea name="comment" rows="6" id="user-comment" aria-label="поле ввода комментария" placeholder="Напишите что-нибудь..." ></textarea>
+        <button type="submit" class="button modal-feedback__button" >Отправить</button>
+      </form>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <ul class="social">
+      <li>
+        <a class="social__item social__twitter" href="#">Твиттер
+          <img src="./img/twitter.svg" width="35" height="35">
+        </a>
+      </li>
+      <li>
+        <a class="social__item social__instagram" href="#">Инстаграм
+          <img src="./img/insta.svg" width="35" height="35">
+        </a>
+      </li>
+      <li>
+        <a class="social__item social__facebook" href="#">Фейсбук
+          <img src="./img/facebook.svg" width="35" height="35">
+        </a>
+      </li>
+      <li>
+        <a class="social__item social__vk" href="#">ВКонтакте
+          <img src="./img/vk.svg" width="35" height="35">
+        </a>
+      </li>
+    </ul>
+     <div class="gen-info">
+       <ul>
+         <li class="gen-info__first-child">
+           <a class="pink-hover">
+             <span class="border-mixin">Для поставщиков</span>
+           </a>
+        </li>
+         <li>
+           <a class="pink-hover">
+             <span class="border-mixin">О производстве</span>
+           </a>
+        </li>
+       </ul>
+       <ul>
+         <li>
+           <a class="pink-hover">
+             <span class="border-mixin">Наши документы</span>
+           </a>
+        </li>
+         <li>
+           <a class="pink-hover">
+             <span class="border-mixin">Экологические стандарты</span>
+           </a>
+        </li>
+       </ul>
+     </div>
+     <div class="copyright">
+      <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="copyright__html-academy-logo" width="108" height="37" src="img/logo-htmlacademy.svg" alt="Логотип HTML academy">
+      </a>
+      <p>Cделано в <a class="pink-hover" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span class="border-mixin">HTML Acdemy</span>
+      </a> &copy; 2019</p>
+    </div>
+  </footer>
+</body>
+</html>

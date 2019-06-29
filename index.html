@@ -5,15 +5,17 @@
     <title>Мороженое "Глэйси"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__container">
-        <img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси">
+        <div class="main-header-logo__container">
+          <img class="main-header__logo" src="img/gllacy-logo.svg" width="154" height="64" alt="логотип Глейси">
+        </div>
         <nav class="main-nav">
           <ul class="site-nav">
-            <li>
+            <li class="site-nav__sub-menu-link"> 
               <a class="site-nav__catalog-link main-header__link" href="#">
                 <span class="border-mixin">Каталог</span>
               </a>
@@ -45,7 +47,7 @@
                 <input type="search" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </li>
-            <li class="login  user-nav__item">
+            <li class="login user-nav__item">
               <a class="login-link main-header__link" href="login.html">Вход</a>
               <form class="modal modal-login" action="#">
                 <h2 class="visually-hidden">Форма авторизации</h2>
@@ -63,7 +65,7 @@
               </form>
             </li>
             <li class="basket" >
-              <a class="basket-link" href="basket.html">Пусто</a>
+              <a class="basket-link main-header__link" href="basket.html">Пусто</a>
             </li>
           </ul>
         </nav>
@@ -83,19 +85,19 @@
           <li>
            <label  class="slide-radio">
             <input type="radio" name="radio" class="visually-hidden slide_button-1" checked>
-              <span class="slide-radio_indicator"></span>
+              <span class="slide-radio_indicator" tabindex="0"></span>
            </label>
           </li>
          <li>
            <label  class="slide-radio">
             <input type="radio" name="radio" class="visually-hidden slide_button-2">
-              <span class="slide-radio_indicator"></span>
+              <span class="slide-radio_indicator" tabindex="0" ></span>
            </label>
          </li>
          <li> 
            <label  class="slide-radio">
             <input type="radio" name="radio" class="visually-hidden slide_button-3">
-              <span class="slide-radio_indicator"></span>
+              <span class="slide-radio_indicator" tabindex="0"></span>
            </label>
          </li>
        </ul>
@@ -133,7 +135,7 @@
     <div class="gallery-container">
       <section class="catalog-gallery">
         <h2 class="visually-hidden">Каталог мороженого</h2>
-        <article class="catalog-gallery__item hit">
+        <article class="catalog-gallery__item hit" tabindex="0">
           <div class="catalog-gallery__item_hover"></div>
           <figure>
             <img src="./img/ice-cream1.png" width="267" height="267" alt="мороженое">
@@ -144,9 +146,9 @@
           <p class="price-tag">
               <span>310 &#x20bd;</span>
           </p>
-          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+          <a class="button catalog-gallery__button" href="#" tabindex="0">Быстрый просмотр</a>
         </article>
-        <article class="catalog-gallery__item hit">
+        <article class="catalog-gallery__item hit" tabindex="0">
           <div class="catalog-gallery__item_hover"></div>
           <figure>
             <img src="./img/ice-cream2.png" width="267" height="267" alt="мороженое">
@@ -157,9 +159,9 @@
           <p class="price-tag">
             <span>380 &#x20bd;</span>
           </p>
-          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+          <a class="button catalog-gallery__button" href="#" tabindex="0">Быстрый просмотр</a>
         </article>
-        <article class="catalog-gallery__item hit">
+        <article class="catalog-gallery__item hit" tabindex="0">
           <div class="catalog-gallery__item_hover"></div>
           <figure >
             <img src="./img/ice-cream3.png" width="267" height="267" alt="мороженое">
@@ -170,9 +172,9 @@
           <p class="price-tag">
             <span>355 &#x20bd;</span>
           </p>
-          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+          <a class="button catalog-gallery__button" href="#" tabindex="0">Быстрый просмотр</a>
         </article>
-        <article class="catalog-gallery__item hit">
+        <article class="catalog-gallery__item hit" tabindex="0">
           <div class="catalog-gallery__item_hover"></div>
           <figure >
             <img src="./img/ice-cream4.png" width="267" height="267" alt="мороженое">
@@ -183,7 +185,7 @@
           <p class="price-tag">
             <span>415 &#x20bd;</span>
           </p>
-          <a class="button catalog-gallery__button" href="#">Быстрый просмотр</a>
+          <a class="button catalog-gallery__button" href="#" tabindex="0">Быстрый просмотр</a>
         </article>
       </section>
      </div>
@@ -245,54 +247,54 @@
           </a>
         </span>
         (с 10 до 20 ежедневно)<br>
-        <a class="button contacts__button" href="#">Форма обратной связи</a>
+        <a class="button contacts__button" href="feadback.html">Форма обратной связи</a>
       </address>
      </section>
    </div>
     <footer class="main-footer">
       <ul class="social">
         <li>
-          <a class="social__item social__twitter" href="#" aria-label="твиттер">Твиттер
-            <object data="./img/twitter.svg" type="image/svg+xml" width="35" height="35"></object>
+          <a class="social__item social__twitter" href="#" tabindex="0">Твиттер
+            <img src="./img/twitter.svg" width="35" height="35">
           </a>
         </li>
         <li>
-          <a class="social__item social__instagram" href="#">Инстаграм
-            <object data="./img/insta.svg" type="image/svg+xml" width="35" height="35"></object>
+          <a class="social__item social__instagram" href="#" tabindex="0">Инстаграм
+            <img src="./img/insta.svg" width="35" height="35">
           </a>
         </li>
         <li>
-          <a class="social__item social__facebook" href="#">Фейсбук
-            <object data="./img/facebook.svg" type="image/svg+xml" width="35" height="35"></object>
+          <a class="social__item social__facebook" href="#" tabindex="0">Фейсбук
+            <img src="./img/facebook.svg" width="35" height="35">
           </a>
         </li>
         <li>
-          <a class="social__item social__vk" href="#">ВКонтакте
-            <object data="./img/vk.svg" type="image/svg+xml" width="35" height="35"></object>
+          <a class="social__item social__vk" href="#" tabindex="0">ВКонтакте
+            <img src="./img/vk.svg" type="image/svg+xml" width="35" height="35">
           </a>
         </li>
       </ul>
        <div class="gen-info">
          <ul>
            <li class="gen-info__first-child">
-             <a class="pink-hover">
+             <a class="pink-hover" href="#">
                <span class="border-mixin">Для поставщиков</span>
              </a>
           </li>
            <li>
-             <a class="pink-hover">
+             <a class="pink-hover" href="#">
                <span class="border-mixin">О производстве</span>
              </a>
           </li>
          </ul>
          <ul>
            <li>
-             <a class="pink-hover">
+             <a class="pink-hover" href="#">
                <span class="border-mixin">Наши документы</span>
              </a>
           </li>
            <li>
-             <a class="pink-hover">
+             <a class="pink-hover" href="#">
                <span class="border-mixin">Экологические стандарты</span>
              </a>
           </li>
@@ -307,7 +309,7 @@
         </a> &copy; 2019</p>
       </div>
     </footer>
-      <form class="modal modal-feedback" action="#">
+      <form class="modal modal-feedback modal-feadback-position" action="#">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="modal-feedback__headline">Мы обязательно вам ответим!</p>
         <label class="visually-hidden" for="user-name">Имя</label>
@@ -320,6 +322,6 @@
         <button type="button" class="modal-feedback__close" aria-label="Закрыть"></button>
       </form>
       <div class="overlay"></div>
-      <script type="text/javascript" src="./js/script.js"></script>
+      <script type="text/javascript" src="./js/script.min.js"></script>
   </body>
 </html>
