@@ -716,7 +716,7 @@ a {
   margin-left: 10px;
 }
 
-main {
+.main-body {
   display: flex;
   width: 1146px;
   flex-direction: column;
@@ -1038,6 +1038,16 @@ main {
   border: 3px solid  #fff;
   border-radius: 50%;
 }
+.filter__fat-input:disabled + .filter__fat-radio_indicator {
+  background-color: rgb(190, 204, 197);
+  border: 3px solid  rgb(190, 204, 197);
+  box-shadow: inset 0 0 0 3px rgb(151, 179, 165);
+  
+}
+
+.filter__fat-input:disabled:checked + .filter__fat-radio_indicator:hover {
+  background-color: rgb(190, 204, 197);
+}
 
 .filter__filler {
   width: 703px;
@@ -1088,9 +1098,27 @@ main {
   left: 5px;
 }
 
+.filter__filler-input:disabled + .filter__filler-checkbox_indicator {
+  border: 2px solid rgb(190, 204, 197);
+}
+
+.filter__filler-input:disabled + .filter__filler-checkbox_indicator::before,
+.filter__filler-input:disabled + .filter__filler-checkbox_indicator::after {
+  background-color: rgb(190, 204, 197);
+}
+
 .filter__filler-input:checked + .filter__filler-checkbox_indicator:hover::before,
 .filter__filler-input:checked + .filter__filler-checkbox_indicator:hover::after {
   background-color: #fff;
+}
+.filter__filler-input:disabled:checked + .filter__filler-checkbox_indicator:hover::before,
+.filter__filler-input:disabled:checked + .filter__filler-checkbox_indicator:hover::after {
+  background-color: rgb(190, 204, 197);
+}
+
+.filter__filler-input:disabled + .filter__filler-checkbox_indicator:hover {
+  border-color:  rgb(190, 204, 197);
+  border-radius: 3px;
 }
 
 .filter__filler-input + .filter__filler-checkbox_indicator:hover {
